@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_dummy_shorts_0" android:layout_width="match_parent" android:layout_height="match_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.dywx.larkplayer.module.base.widget.LPImageView android:id="@id/iv_dummy_preload" android:background="@color/night_bg_main" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:id="@id/iv_dummy_preload" android:background="#26FFFFFF" android:backgroundBlurRadius="40dp" android:layout_width="match_parent" android:layout_height="match_parent" />
     <ProgressBar android:id="@id/progress_loading" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginBottom="27.0dp" android:indeterminate="true" android:indeterminateDuration="1500" android:indeterminateTint="?white_opacity_50" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="?android:progressBarStyleHorizontal" />
 </androidx.constraintlayout.widget.ConstraintLayout>

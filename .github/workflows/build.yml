@@ -1,4 +1,4 @@
-name: Clean Build Lark APK
+name: Build & Sign Glass APK
 on: [push, workflow_dispatch]
 jobs:
   build:
@@ -9,11 +9,17 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: Build APK with Apktool 3.0.1
+      - name: Build APK
         run: |
           wget https://github.com/iBotPeaches/Apktool/releases/download/v3.0.1/apktool_3.0.1.jar -O apktool.jar
-          java -jar apktool.jar b . -o Lark_iOS_18_Final_Unsigned.apk
-      - uses: actions/upload-artifact@v4
+          java -jar apktool.jar b . -o Lark_Unsigned.apk
+      - name: Auto Sign APK
+        run: |
+          sudo apt-get install -y apksigner
+          keytool -genkey -v -keystore release.keystore -storepass android -alias glassmod -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=GlassMod, O=Termux, C=EG"
+          apksigner sign --ks release.keystore --ks-pass pass:android --key-pass pass:android --out Lark_iOS_Glass_Signed_Ready.apk Lark_Unsigned.apk
+      - name: Upload Signed APK
+        uses: actions/upload-artifact@v4
         with:
-          name: Lark_iOS_18_APK
-          path: Lark_iOS_18_Final_Unsigned.apk
+          name: Lark_iOS_Glass_Signed
+          path: Lark_iOS_Glass_Signed_Ready.apk

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@drawable/corner_rect_radius_8dp_night" android:layout_width="match_parent" android:layout_height="match_parent"
+<LinearLayout android:orientation="vertical" android:background="#26FFFFFF" android:backgroundBlurRadius="40dp" android:layout_width="match_parent" android:layout_height="match_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp">
         <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_template" android:layout_width="match_parent" android:layout_height="wrap_content">
@@ -16,8 +16,8 @@
         </androidx.core.widget.NestedScrollView>
     </LinearLayout>
     <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/buttonPanel" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="16.0dp">
-        <Button android:textAppearance="@style/Button" android:textColor="@color/night_content_soft" android:id="@android:id/button2" android:background="@null" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        <Button android:textAppearance="@style/Button" android:textColor="@color/night_content_soft" android:id="@android:id/button3" android:background="@null" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textAppearance="@style/Button" android:textColor="@color/night_content_soft" android:id="@android:id/button2" android:background="#26FFFFFF" android:backgroundBlurRadius="40dp" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textAppearance="@style/Button" android:textColor="@color/night_content_soft" android:id="@android:id/button3" android:background="#26FFFFFF" android:backgroundBlurRadius="40dp" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         <com.dywx.larkplayer.module.base.widget.shape.RoundButton android:textAppearance="@style/Button" android:textColor="@color/night_content_main" android:id="@android:id/button1" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rv_backgroundColor="@color/night_brand_main" app:rv_cornerRadius="4.0dp" />
     </LinearLayout>
 </LinearLayout>

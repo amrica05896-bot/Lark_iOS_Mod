@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/slide_touch_area" android:background="@color/night_bg_main" android:layout_width="match_parent" android:layout_height="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/slide_touch_area" android:background="#26FFFFFF" android:backgroundBlurRadius="40dp" android:layout_width="match_parent" android:layout_height="match_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView android:id="@id/ic_power" android:padding="16.0dp" android:layout_width="56.0dp" android:layout_height="56.0dp" android:scaleType="centerInside" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_powersaving_normal" app:tint="@color/night_brand_main" />
     <TextView android:textColor="@color/night_content_soft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_channel_power_saving_mode" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="@id/ic_power" app:layout_constraintStart_toEndOf="@id/ic_power" app:layout_constraintTop_toTopOf="@id/ic_power" />

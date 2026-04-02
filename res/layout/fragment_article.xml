@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:id="@id/contentBg" android:layout_width="match_parent" android:layout_height="match_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#26FFFFFF" android:backgroundBlurRadius="40dp" android:layout_width="match_parent" android:layout_height="match_parent">
         <TextView android:textAppearance="@style/Subtitle1" android:textColor="?brand_main" android:layout_gravity="start" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" />
         <TextView android:textAppearance="@style/Subtitle2" android:textColor="?content_soft" android:id="@id/content" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
         <FrameLayout android:id="@id/operator_area" android:padding="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="94.0dp">
@@ -11,7 +11,7 @@
                 <com.dywx.larkplayer.module.base.widget.LPButton android:gravity="center" android:id="@id/no" android:layout_width="130.0dp" android:text="@string/no" android:layout_alignTop="@id/yes" android:layout_toEndOf="@id/yes" style="@style/BtnMid" />
             </RelativeLayout>
             <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?content_main" android:id="@id/thanks" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_success" />
-            <LinearLayout android:orientation="vertical" android:id="@id/issues" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/issues" android:background="#26FFFFFF" android:backgroundBlurRadius="40dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
                 <TextView android:textAppearance="@style/Overline" android:textColor="@color/gray_text_color" android:id="@id/better" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_article_comment_title" />
                 <RadioGroup android:id="@id/article_comment_group" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <RadioButton android:textAppearance="@style/Subtitle2" android:textColor="?content_main" android:id="@id/article_comment_1" android:layout_width="match_parent" android:layout_height="48.0dp" android:button="@null" android:text="@string/feedback_article_comment_1" android:drawableLeft="@drawable/ic_feedback_radio" android:drawablePadding="10.0dp" android:drawableStart="@drawable/ic_feedback_radio" />

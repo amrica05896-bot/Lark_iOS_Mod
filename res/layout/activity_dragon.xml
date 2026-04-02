@@ -55,7 +55,7 @@
             <Button android:id="@id/btn_activate_firebase_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Activate" />
         </LinearLayout>
         <Button android:id="@id/btn_check_sensor_sample_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看 sensor_sample_config" />
-        <TextView android:textSize="12.0sp" android:textColor="#333333" android:id="@id/tv_sensor_sample_config_result" android:background="#f0f0f0" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#333333" android:id="@id/tv_sensor_sample_config_result" android:background="#26FFFFFF" android:backgroundBlurRadius="40dp" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
         <TextView android:id="@id/app_common_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="copyAppCommonInfo" />
         <Switch android:id="@id/switch_feedback_host" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换为 snaptube 反馈请求" />
         <Switch android:id="@id/switch_show_audio_playlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="显示音频 Playlist" />

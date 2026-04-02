@@ -15,7 +15,7 @@
 
     <com.dywx.larkplayer.module.base.widget.LPImageView 
         android:id="@id/port_video_ope_group_bg" 
-        android:background="@drawable/ios_18_glass"
+        android:background="#26FFFFFF" android:backgroundBlurRadius="40dp"
         
         android:elevation="15dp"
         android:outlineProvider="bounds"
