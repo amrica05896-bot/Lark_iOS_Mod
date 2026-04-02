@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_song_default_cover_big_day" />
+    <item android:drawable="@drawable/ic_song_default_lp_cover_day" />
+</layer-list>

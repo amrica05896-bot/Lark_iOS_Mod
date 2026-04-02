@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical" android:id="@android:id/background">
+        <selector>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <solid android:color="?white_opacity_08" />
+                    <size android:height="28.0dp" />
+                    <corners android:radius="14.0dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="?white_opacity_20" />
+                    <size android:height="28.0dp" />
+                    <corners android:radius="14.0dp" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:gravity="center_vertical" android:id="@android:id/secondaryProgress">
+        <scale android:scaleWidth="100%">
+            <selector>
+                <item android:state_enabled="false">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?white_opacity_08" />
+                        <size android:height="28.0dp" />
+                        <corners android:radius="14.0dp" />
+                    </shape>
+                </item>
+                <item>
+                    <shape android:shape="rectangle">
+                        <solid android:color="?white_opacity_20" />
+                        <size android:height="28.0dp" />
+                        <corners android:radius="14.0dp" />
+                    </shape>
+                </item>
+            </selector>
+        </scale>
+    </item>
+    <item android:gravity="center_vertical" android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <selector>
+                <item android:state_enabled="false">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?white_opacity_20" />
+                        <size android:height="28.0dp" />
+                        <corners android:radius="14.0dp" />
+                    </shape>
+                </item>
+                <item android:state_pressed="true" android:state_activated="false">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?positive_content" />
+                        <size android:height="28.0dp" />
+                        <corners android:radius="14.0dp" />
+                    </shape>
+                </item>
+                <item android:state_activated="true">
+                    <shape android:shape="rectangle">
+                        <solid android:color="?positive_content" />
+                        <size android:height="28.0dp" />
+                        <corners android:radius="14.0dp" />
+                    </shape>
+                </item>
+                <item>
+                    <shape android:shape="rectangle">
+                        <solid android:color="?positive_content" />
+                        <size android:height="28.0dp" />
+                        <corners android:radius="14.0dp" />
+                    </shape>
+                </item>
+            </selector>
+        </scale>
+    </item>
+</layer-list>

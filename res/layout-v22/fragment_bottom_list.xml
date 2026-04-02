@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.shape.RoundLinearLayout android:orientation="vertical" android:paddingTop="@dimen/spacing_small" android:paddingBottom="@dimen/spacing_small" android:layout_width="match_parent" android:layout_height="match_parent" app:rv_backgroundColor="?bg_overlay" app:rv_cornerRadius_TL="@dimen/spacing_small" app:rv_cornerRadius_TR="@dimen/spacing_small"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:layout_gravity="center_horizontal" android:id="@id/btn_drag" android:layout_width="36.0dp" android:layout_height="12.0dp" android:layout_marginTop="@dimen/spacing_xsmall" android:layout_marginBottom="@dimen/spacing_xsmall" android:layout_marginVertical="@dimen/spacing_xsmall" app:need_init="true" app:srcCompat="@drawable/shape_stick_drag" app:vector_fill_color="?content_weak" />
+    <ViewStub android:id="@id/view_stub_head" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</com.dywx.larkplayer.module.base.widget.shape.RoundLinearLayout>

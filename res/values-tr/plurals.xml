@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="album_count">
+        <item quantity="one">%s albüm</item>
+        <item quantity="other">%s albüm</item>
+    </plurals>
+    <plurals name="artist_count">
+        <item quantity="one">%s sanatçı</item>
+        <item quantity="other">%s sanatçılar</item>
+    </plurals>
+    <plurals name="authorize_uri_scan_songs_tips">
+        <item quantity="one">Sizin için 1 şarkı buldum</item>
+        <item quantity="other">Sizin için %d şarkı bulundu</item>
+    </plurals>
+    <plurals name="authorize_uri_scan_videos_tips">
+        <item quantity="one">Sizin için 1 video buldum</item>
+        <item quantity="other">Sizin için %d video bulundu</item>
+    </plurals>
+    <plurals name="daily_playlist_detail_songs">
+        <item quantity="one">%d Şarkı</item>
+        <item quantity="other">%d Şarkı</item>
+    </plurals>
+    <plurals name="day_ago">
+        <item quantity="one">%d gün önce</item>
+        <item quantity="other">%d gün önce</item>
+    </plurals>
+    <plurals name="delete_file_dialog_content">
+        <item quantity="one">Bir kez silindiğinde, dosya geri alınamaz.</item>
+        <item quantity="other">Bir kez silindiğinde, dosyalar geri alınamaz.</item>
+    </plurals>
+    <plurals name="delete_file_dialog_title">
+        <item quantity="one">Dosyayı sil?</item>
+        <item quantity="other">%d dosyayı sil?</item>
+    </plurals>
+    <plurals name="delete_playlist_hint">
+        <item quantity="one">Bu oynatma listesini silmek istediğinizden emin misiniz?</item>
+        <item quantity="other">Bu oynatma listelerini silmek istediğinizden emin misiniz?</item>
+    </plurals>
+    <plurals name="delete_song_checkbox">
+        <item quantity="one">Şarkıyı cihazdan da sil</item>
+        <item quantity="other">Ayrıca şarkılar cihazdan silinsin mi?</item>
+    </plurals>
+    <plurals name="delete_song_dialog_content">
+        <item quantity="one">Bir kez silindiğinde, şarkı geri getirilemez.</item>
+        <item quantity="other">Bir kez silindiğinde, şarkılar geri getirilemez.</item>
+    </plurals>
+    <plurals name="delete_song_dialog_title">
+        <item quantity="one">Şarkı silinsin mi?</item>
+        <item quantity="other">%d şarkı silinsin mi?</item>
+    </plurals>
+    <plurals name="delete_song_from_device">
+        <item quantity="one">Bu şarkıyı cihazdan silmek istediğinizden emin misiniz?</item>
+        <item quantity="other">Bu şarkıları cihazdan silmek istediğinizden emin misiniz?</item>
+    </plurals>
+    <plurals name="delete_song_in_album">
+        <item quantity="one">Bu albümü ve içerdiği %s dosyasını silmek istediğinizden emin misiniz?</item>
+        <item quantity="other">Bu albümü ve içerdiği %s dosyasını silmek istediğinizden emin misiniz?</item>
+    </plurals>
+    <plurals name="delete_song_in_artist">
+        <item quantity="one">Bu sanatçıyı ve içerdiği %s&amp;#39;yi silmek istediğinizden emin misiniz?</item>
+        <item quantity="other">Bu sanatçıları ve içerdiği %s&amp;#39;yi silmek istediğinizden emin misiniz?</item>
+    </plurals>
+    <plurals name="delete_video_checkbox">
+        <item quantity="one">Videoyu cihazdan da sil</item>
+        <item quantity="other">Videoları cihazdan da sil</item>
+    </plurals>
+    <plurals name="delete_video_checkbox_new">
+        <item quantity="one">Videoyu da sil</item>
+        <item quantity="other">Videoları da sil</item>
+    </plurals>
+    <plurals name="delete_video_dialog_content">
+        <item quantity="one">Bir kez silindiğinde, video geri getirilemez.</item>
+        <item quantity="other">Bir kez silindiğinde, videolar geri getirilemez.</item>
+    </plurals>
+    <plurals name="delete_video_dialog_title">
+        <item quantity="one">Video silinsin mi?</item>
+        <item quantity="other">%d video silinsin mi?</item>
+    </plurals>
+    <plurals name="delete_video_playlist_hint">
+        <item quantity="one">Oynatma listesini sildiğinizden emin misiniz？Videolarınız silinmeyecek</item>
+        <item quantity="other">%d oynatma listesini sildiğinizden emin misiniz？Videolarınız silinmeyecek</item>
+    </plurals>
+    <plurals name="delete_video_playlist_tip">
+        <item quantity="one">Çalma listesini silmek istediğinizden emin misiniz？</item>
+        <item quantity="other">Çalma listelerini silmek istediğinizden emin misiniz？</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d saniye ileri sar</item>
+        <item quantity="other">%d saniye ileri sar</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d saniye geri sar</item>
+        <item quantity="other">%d saniye geri sar</item>
+    </plurals>
+    <plurals name="file_move_to_recently_deleted_snack">
+        <item quantity="one">%1$d dosya “Son Silinen” klasörüne taşındı</item>
+        <item quantity="other">%1$d dosya “Son Silinen” klasörüne taşındı</item>
+    </plurals>
+    <plurals name="file_not_exist_sdcard_unmount">
+        <item quantity="one">SD kartı ile bir sorun var. Bu dosyayı listenden yenileyin veya kaldırın.</item>
+        <item quantity="other">SD kartı ile bir sorun var, tüm bu %d dosyayı listeden yenileyin veya kaldırın.</item>
+    </plurals>
+    <plurals name="files_quantity">
+        <item quantity="one">1 dosya</item>
+        <item quantity="other">%d dosya</item>
+    </plurals>
+    <plurals name="flies_quantity">
+        <item quantity="one">1 dosya</item>
+        <item quantity="other">%d dosya</item>
+    </plurals>
+    <plurals name="hour_ago">
+        <item quantity="one">%d saat önce</item>
+        <item quantity="other">%d saat önce</item>
+    </plurals>
+    <plurals name="lark_player_songs_count">
+        <item quantity="one">Lark Videosu · 1 şarkı</item>
+        <item quantity="other">Lark Videosu · %d şarkı</item>
+    </plurals>
+    <plurals name="less_than_days">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="library_videos_quantity">
+        <item quantity="one">%s videosu</item>
+        <item quantity="other">%s videolar</item>
+    </plurals>
+    <plurals name="locking_videos">
+        <item quantity="one">%d video kilitleniyor</item>
+        <item quantity="other">%d video kilitleniyor</item>
+    </plurals>
+    <plurals name="minute_ago">
+        <item quantity="one">%d dakika önce</item>
+        <item quantity="other">%d dakika önce</item>
+    </plurals>
+    <plurals name="month_ago">
+        <item quantity="one">%d ay önce</item>
+        <item quantity="other">%d ay önce</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d yeni bildirim</item>
+        <item quantity="other">%d yeni bildirim</item>
+    </plurals>
+    <plurals name="multiple_delete_album_file_num">
+        <item quantity="one">%d dosya</item>
+        <item quantity="other">%d dosya</item>
+    </plurals>
+    <plurals name="multiple_delete_from_device">
+        <item quantity="one">%d video cihazınızdan kalıcı olarak silinsin mi?</item>
+        <item quantity="other">%d video cihazınızdan kalıcı olarak silinsin mi?</item>
+    </plurals>
+    <plurals name="new_songs_title">
+        <item quantity="one">Yeni şarkı eklendi, şimdi çalmak için dokunun.</item>
+        <item quantity="other">%1$d yeni şarkı eklendi, şimdi çalmak için dokunun.</item>
+    </plurals>
+    <plurals name="new_songs_title_new">
+        <item quantity="one">Yeni şarkı eklendi, çalmak için hemen dokunun.</item>
+        <item quantity="other">%1$d yeni şarkı eklendi, çalmak için hemen dokunun.</item>
+    </plurals>
+    <plurals name="new_videos_found">
+        <item quantity="one">1 yeni video bulundu!</item>
+        <item quantity="other">%1$d yeni video bulundu!</item>
+    </plurals>
+    <plurals name="new_videos_title">
+        <item quantity="one">Yeni video eklendi, şimdi oynatmak için dokunun.</item>
+        <item quantity="other">%1$d yeni video eklendi, oynatmak için hemen dokunun.</item>
+    </plurals>
+    <plurals name="new_videos_title_new">
+        <item quantity="one">Yeni video eklendi, oynatmak için hemen dokunun.</item>
+        <item quantity="other">%1$d yeni video eklendi, oynatmak için hemen dokunun.</item>
+    </plurals>
+    <plurals name="play_count">
+        <item quantity="one">%s zaman</item>
+        <item quantity="other">%s kez</item>
+    </plurals>
+    <plurals name="playlist_delete_message">
+        <item quantity="one">1 video “Son Silinenler”e taşınacak ve 30 gün sonra silinecek.</item>
+        <item quantity="other">%1$d video “Son Silinenler”e taşınacak ve 30 gün sonra silinecek.</item>
+    </plurals>
+    <plurals name="remove_song_in_playlist">
+        <item quantity="one">Bu şarkıyı çalma listesinden kaldırmak istediğinizden emin misiniz?</item>
+        <item quantity="other">Bu şarkıları çalma listesinden kaldırmak istediğinizden emin misiniz?</item>
+    </plurals>
+    <plurals name="remove_video_from_playlist_hint">
+        <item quantity="one">Bu videoyu oynatma listesinden kaldırmak istediğinizden emin misiniz?</item>
+        <item quantity="other">%d videoyu oynatma listesinden kaldırmak istediğinizden emin misiniz?</item>
+    </plurals>
+    <plurals name="remove_video_from_playlist_tip">
+        <item quantity="one">Bu videoyu oynatma listesinden kaldırmak istediğinizden emin misiniz？</item>
+        <item quantity="other">Bu videoları oynatma listesinden kaldırmak istediğinizden emin misiniz？</item>
+    </plurals>
+    <plurals name="scan_songs_found">
+        <item quantity="one">%d şarkı bulundu!</item>
+        <item quantity="other">%d şarkı bulundu!</item>
+    </plurals>
+    <plurals name="scan_songs_found2">
+        <item quantity="one">"%d Şarkı
+ Bulundu!"</item>
+        <item quantity="other">"%d Şarkı
+ Bulundu!"</item>
+    </plurals>
+    <plurals name="songs_count">
+        <item quantity="one">%s şarkı</item>
+        <item quantity="other">%s şarkı</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="one">1 şarkı</item>
+        <item quantity="other">%d şarkı</item>
+    </plurals>
+    <plurals name="task_reward">
+        <item quantity="one">+ 1 jeton</item>
+        <item quantity="other">+ %d jeton</item>
+    </plurals>
+    <plurals name="trash_file_dialog_content">
+        <item quantity="one">1 dosya “Son Silinenler”e taşınacak ve 30 gün sonra silinecek.</item>
+        <item quantity="other">%d dosya “Son Silinenler”e taşınacak ve 30 gün sonra silinecek.</item>
+    </plurals>
+    <plurals name="trash_song_dialog_content">
+        <item quantity="one">1 şarkı “Son Silinenler”e taşınacak ve 30 gün sonra silinecek.</item>
+        <item quantity="other">%d şarkı “Son Silinenler”e taşınacak ve 30 gün sonra silinecek.</item>
+    </plurals>
+    <plurals name="trash_video_dialog_content">
+        <item quantity="one">1 video “Son Silinenler”e taşınacak ve 30 gün sonra silinecek.</item>
+        <item quantity="other">%d video “Son Silinenler”e taşınacak ve 30 gün sonra silinecek.</item>
+    </plurals>
+    <plurals name="unlocking_videos">
+        <item quantity="one">%d videonun kilidi açılıyor</item>
+        <item quantity="other">%d videonun kilidi açılıyor</item>
+    </plurals>
+    <plurals name="video_locked_tip">
+        <item quantity="one">%d video kilitli</item>
+        <item quantity="other">%d video kilitli</item>
+    </plurals>
+    <plurals name="video_unlock_tip">
+        <item quantity="one">%d videonun kilidi açıldı</item>
+        <item quantity="other">%d videonun kilidi açıldı</item>
+    </plurals>
+    <plurals name="videos_quantity">
+        <item quantity="one">1 video</item>
+        <item quantity="other">%d video</item>
+    </plurals>
+    <plurals name="view_hidden_folders">
+        <item quantity="one">1 gizli klasörü görüntüle</item>
+        <item quantity="other">%d gizli klasörü görüntüle</item>
+    </plurals>
+    <plurals name="x_song_selected">
+        <item quantity="one">%d Şarkı Seçildi</item>
+        <item quantity="other">%d Şarkı Seçildi</item>
+    </plurals>
+</resources>

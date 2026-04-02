@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPConstraintLayout android:id="@id/background" android:tag="layout/fragment_extra_info_0" android:background="?bg_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_left" app:navigationIconTint="?content_main" app:titleTextAppearance="@style/Title_Large">
+        <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="?content_main" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Info" style="@style/Title3_LP" />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="?content_main" android:id="@id/app_common_info" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_margin="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" style="@style/Subtitle2_LP" />
+    <com.dywx.larkplayer.module.base.widget.LPButton android:gravity="center" android:id="@id/copy" android:tag="binding_1" android:layout_width="wrap_content" android:layout_marginBottom="32.0dp" android:text="Copy" android:layout_marginEnd="32.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" style="@style/BtnMid" />
+</com.dywx.larkplayer.module.base.widget.LPConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:layout_width="64.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPLinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/vb_layout" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="64.0dp" android:layout_height="wrap_content" android:paddingVertical="16.0dp" app:need_delegate="true" app:rv_backgroundColor="@color/day_black_opacity_20" app:rv_cornerRadius="16.0dp">
+        <com.dywx.larkplayer.module.base.widget.VolumeVerticalBar android:id="@id/vb_volume" android:layout_width="64.0dp" android:layout_height="wrap_content" />
+    </com.dywx.larkplayer.module.base.widget.LPLinearLayout>
+</FrameLayout>

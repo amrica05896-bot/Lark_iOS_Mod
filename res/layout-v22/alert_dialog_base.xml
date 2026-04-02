@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?bg_overlay_top" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_template" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@android:id/icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginStart="0.0dp" android:layout_marginEnd="16.0dp" />
+            <TextView android:textAppearance="@style/Title3" android:textColor="?content_main" android:id="@id/alertTitle" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="16.0dp" android:layout_weight="1.0" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp">
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+            <TextView android:textAppearance="@style/Body2" android:textColor="?content_soft" android:id="@android:id/message" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/buttonPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="16.0dp">
+        <Button android:textAppearance="@style/Button" android:textColor="?content_soft" android:id="@android:id/button3" android:background="@drawable/lp_ripple_mask" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp" android:paddingVertical="8.0dp" />
+        <Button android:textAppearance="@style/Button" android:textColor="?content_soft" android:id="@android:id/button2" android:background="@drawable/lp_ripple_mask" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dp" android:minHeight="0.0dp" android:paddingHorizontal="16.0dp" android:paddingVertical="8.0dp" />
+        <Button android:textAppearance="@style/Button" android:textColor="?brand_main" android:id="@android:id/button1" android:background="@drawable/lp_ripple_mask" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dp" android:minHeight="0.0dp" android:paddingHorizontal="16.0dp" android:paddingVertical="8.0dp" />
+    </LinearLayout>
+</LinearLayout>

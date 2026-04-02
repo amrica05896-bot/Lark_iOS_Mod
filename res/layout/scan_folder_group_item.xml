@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPConstraintLayout android:tag="layout/scan_folder_group_item_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="?content_soft" android:gravity="start|center" android:id="@id/title" android:tag="binding_1" android:paddingTop="16.0dp" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Overline_LP" />
+    <com.dywx.larkplayer.module.base.widget.ReporterRecyclerView android:orientation="vertical" android:id="@id/folder_list" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+</com.dywx.larkplayer.module.base.widget.LPConstraintLayout>

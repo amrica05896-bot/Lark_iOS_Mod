@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView android:textColor="?content_weak" android:gravity="center" android:id="@id/tv_content" android:tag="layout/item_feedback_bottom_0" android:paddingLeft="@dimen/spacing_normal" android:paddingTop="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_normal" android:paddingBottom="@dimen/spacing_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/feedback_thank_tips" style="@style/Body_LP"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

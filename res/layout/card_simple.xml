@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dywx.larkplayer.module.base.widget.FixedAspectRatioFrameLayout android:id="@id/cover_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.dywx.larkplayer.module.base.widget.FixedAspectRatioFrameLayout>
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textSize="12.0sp" android:textColor="?content_main" android:ellipsize="end" android:gravity="center|top" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:minHeight="32.0dp" android:maxLines="2" style="@style/Subtitle2_LP" />
+</LinearLayout>

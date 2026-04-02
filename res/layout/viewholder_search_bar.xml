@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPConstraintLayout android:tag="layout/viewholder_search_bar_0" android:layout_width="match_parent" android:layout_height="62.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.SearchLayout android:id="@id/search_layout" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginTop="4.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.dywx.larkplayer.module.base.widget.LPConstraintLayout>

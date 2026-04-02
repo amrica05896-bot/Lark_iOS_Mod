@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="auto" package="com.larkvideo.player" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.CREATE_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <queries>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <package android:name="com.tencent.wesing"/>
+        <package android:name="com.wplus.singpal"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+    </queries>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.larkvideo.player.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.larkvideo.player.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@mipmap/ic_launcher" android:name="com.dywx.larkplayer.app.LarkPlayerApplication" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme.Night.Default">
+        <profileable android:shell="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="true"/>
+        <meta-data android:name="com.lge.support.SPLIT_WINDOW" android:value="true"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="true"/>
+        <activity android:exported="true" android:icon="@drawable/ic_share_play" android:launchMode="singleTask" android:name="com.dywx.larkplayer.main.RedirectActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.SplashScreen.Redirect">
+            <intent-filter android:label="@string/play_video">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/3gpp2"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/3gpp2"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/x-amv"/>
+                <data android:mimeType="video/x-ms-asf"/>
+                <data android:mimeType="video/avi"/>
+                <data android:mimeType="video/x-msvideo"/>
+                <data android:mimeType="video/x-dirac"/>
+                <data android:mimeType="video/x-dv"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/flv"/>
+                <data android:mimeType="video/x-flv"/>
+                <data android:mimeType="video/x-google-video"/>
+                <data android:mimeType="application/gxf"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/x-m4v"/>
+                <data android:mimeType="video/x-matroska"/>
+                <data android:mimeType="video/quicktime"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/mp2ts"/>
+                <data android:mimeType="video/x-mtv"/>
+                <data android:mimeType="application/mxf"/>
+                <data android:mimeType="application/mxf"/>
+                <data android:mimeType="video/x-nsv"/>
+                <data android:mimeType="video/x-nut"/>
+                <data android:mimeType="video/x-nuv"/>
+                <data android:mimeType="video/ogg"/>
+                <data android:mimeType="video/ogg"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/postscript"/>
+                <data android:mimeType="video/x-record"/>
+                <data android:mimeType="application/vnd.rn-realmedia"/>
+                <data android:mimeType="application/vnd.rn-realmedia-vbr"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/dvd"/>
+                <data android:mimeType="video/x-ms-vro"/>
+                <data android:mimeType="video/webm"/>
+                <data android:mimeType="video/x-ms-wm"/>
+                <data android:mimeType="video/x-ms-wmv"/>
+                <data android:mimeType="video/x-ms-wt"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="larkplayer.intent.action.ADJUST_SPEED"/>
+                <action android:name="larkplayer.intent.action.JUMP_LYRIC_PAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="video/3gpp2"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/3gpp2"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/x-amv"/>
+                <data android:mimeType="video/x-ms-asf"/>
+                <data android:mimeType="video/avi"/>
+                <data android:mimeType="video/x-msvideo"/>
+                <data android:mimeType="video/x-dirac"/>
+                <data android:mimeType="video/x-dv"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/flv"/>
+                <data android:mimeType="video/x-flv"/>
+                <data android:mimeType="video/x-google-video"/>
+                <data android:mimeType="application/gxf"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/x-m4v"/>
+                <data android:mimeType="video/x-matroska"/>
+                <data android:mimeType="video/quicktime"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mpeg"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/mp2ts"/>
+                <data android:mimeType="video/x-mtv"/>
+                <data android:mimeType="application/mxf"/>
+                <data android:mimeType="application/mxf"/>
+                <data android:mimeType="video/x-nsv"/>
+                <data android:mimeType="video/x-nut"/>
+                <data android:mimeType="video/x-nuv"/>
+                <data android:mimeType="video/ogg"/>
+                <data android:mimeType="video/ogg"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/postscript"/>
+                <data android:mimeType="video/x-record"/>
+                <data android:mimeType="application/vnd.rn-realmedia"/>
+                <data android:mimeType="application/vnd.rn-realmedia-vbr"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/mp2t"/>
+                <data android:mimeType="video/dvd"/>
+                <data android:mimeType="video/x-ms-vro"/>
+                <data android:mimeType="video/webm"/>
+                <data android:mimeType="video/x-ms-wm"/>
+                <data android:mimeType="video/x-ms-wmv"/>
+                <data android:mimeType="video/x-ms-wt"/>
+                <data android:mimeType="audio/3gpp"/>
+                <data android:mimeType="audio/ac3"/>
+                <data android:mimeType="audio/ac3"/>
+                <data android:mimeType="audio/aac"/>
+                <data android:mimeType="audio/aac"/>
+                <data android:mimeType="audio/x-aiff"/>
+                <data android:mimeType="audio/x-aiff"/>
+                <data android:mimeType="audio/x-aiff"/>
+                <data android:mimeType="audio/vnd.dolby.dd-raw"/>
+                <data android:mimeType="audio/ape"/>
+                <data android:mimeType="audio/amr-wb"/>
+                <data android:mimeType="audio/x-caf"/>
+                <data android:mimeType="audio/vnd.dts"/>
+                <data android:mimeType="audio/x-it"/>
+                <data android:mimeType="audio/mp4"/>
+                <data android:mimeType="audio/mp4"/>
+                <data android:mimeType="audio/mp4"/>
+                <data android:mimeType="audio/x-matroska"/>
+                <data android:mimeType="audio/vnd.dolby.mlp"/>
+                <data android:mimeType="audio/mpeg"/>
+                <data android:mimeType="audio/mpeg"/>
+                <data android:mimeType="audio/mpeg"/>
+                <data android:mimeType="audio/mpeg"/>
+                <data android:mimeType="audio/x-musepack"/>
+                <data android:mimeType="audio/mpeg"/>
+                <data android:mimeType="audio/ogg"/>
+                <data android:mimeType="audio/ogg"/>
+                <data android:mimeType="audio/oma"/>
+                <data android:mimeType="audio/opus"/>
+                <data android:mimeType="audio/x-pn-realaudio"/>
+                <data android:mimeType="audio/x-pn-realaudio"/>
+                <data android:mimeType="audio/midi"/>
+                <data android:mimeType="audio/x-s3m"/>
+                <data android:mimeType="audio/ogg"/>
+                <data android:mimeType="audio/x-tta"/>
+                <data android:mimeType="audio/x-voc"/>
+                <data android:mimeType="audio/x-twinvq"/>
+                <data android:mimeType="audio/x-w64"/>
+                <data android:mimeType="audio/wav"/>
+                <data android:mimeType="audio/x-wavpack"/>
+                <data android:mimeType="audio/x-adpcm"/>
+                <data android:mimeType="audio/x-xm"/>
+                <data android:mimeType="audio/flac"/>
+                <data android:mimeType="audio/aac"/>
+                <data android:mimeType="audio/amr"/>
+                <data android:mimeType="audio/3gpp"/>
+                <data android:mimeType="audio/x-ms-wma"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="deeplink" android:scheme="larkvideo"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="offline" android:scheme="larkvideo"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.dywx.larkplayer.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Night.StartPage" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.sensorsdata.analytics.android.sdk.dialog.SchemeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sae55787ec"/>
+            </intent-filter>
+        </activity>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.dywx.larkplayer.module.video.player.VideoPlayerActivity" android:supportsPictureInPicture="true" android:theme="@style/Translucent.Night.Theme.VideoPlayer"/>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:launchMode="singleTask" android:name="com.dywx.larkplayer.module.other.devtool.DragonActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.dywx.larkplayer.feature.serviceproxy.OnePixelServiceProxyActivity" android:taskAffinity="com.dywx.larkplayer.serviceproxy.task" android:theme="@style/OnePixel"/>
+        <service android:configChanges="keyboardHidden|orientation|screenSize" android:enabled="true" android:exported="true" android:foregroundServiceType="mediaPlayback" android:name="com.dywx.larkplayer.feature.player.SingleProcessModePlaybackService" android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="androidx.media2.session.MediaSessionService"/>
+            </intent-filter>
+        </service>
+        <service android:configChanges="keyboardHidden|orientation|screenSize" android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.dywx.larkplayer.media_library_v2.MediaScanService" android:stopWithTask="true"/>
+        <service android:configChanges="keyboardHidden|orientation|screenSize" android:enabled="true" android:exported="true" android:foregroundServiceType="mediaPlayback" android:name="com.dywx.larkplayer.feature.player.MultiProcessModePlaybackService" android:process=":playback" android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="androidx.media2.session.MediaSessionService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.larkvideo.player.feature.player.PlaybackContentProvider" android:exported="false" android:name="com.dywx.larkplayer.feature.player.PlaybackContentProvider" android:process=":playback"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dywx.larkplayer.feature.player.receiver.LarkPlayerMediaButtonReceiver" android:process=":playtool">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.ads.InterstitialAdActivity"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dywx.larkplayer.receiver.MediaScannerReceiverBridge" android:process=":message">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_NOFS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNSHARED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <receiver android:exported="true" android:name="com.dywx.larkplayer.receiver.LarkCampaignTrackingReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.larkvideo.player.androidx-startup" android:exported="false" android:initOrder="99" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="com.larkvideo.player.android-startup" android:exported="false" android:initOrder="99" android:name="com.rousetime.android_startup.provider.StartupProvider">
+            <meta-data android:name="com.dywx.larkplayer.app.initializer.ThemeInitStartUp" android:value="android.startup"/>
+            <meta-data android:name="com.dywx.larkplayer.app.initializer.ResourcesStartup" android:value="android.startup"/>
+            <meta-data android:name="com.dywx.larkplayer.app.initializer.AppStartupProviderConfig" android:value="android.startup.provider.config"/>
+        </provider>
+        <activity android:name="com.dywx.larkplayer.module.guide.SettingsGuideActivity" android:theme="@style/Theme.AppCompat.Dialog.NoTitle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.dywx.larkplayer.module.music.lockscreen.OverLockScreenActivity" android:screenOrientation="unspecified" android:theme="@style/TransparentFullScreenTheme"/>
+        <service android:exported="true" android:name="com.dywx.larkplayer.feature.fcm.FcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.dywx.larkplayer.feature.fcm.FcmInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_stat_larkplayer"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/night_brand_main"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel" android:value="fcm_default_channel"/>
+        <activity android:launchMode="singleTask" android:name="com.dywx.larkplayer.module.other.power.PowerSavingModeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.dywx.larkplayer.module.other.DrawOverPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:exported="true" android:name="com.dywx.larkplayer.module.other.feedback.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.sensorsdata.analytics.android.VTrack" android:value="false"/>
+        <provider android:authorities="com.larkvideo.player.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.dywx.larkplayer.provider.GenericFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/fileprovider_paths"/>
+        </provider>
+        <service android:name="com.dywx.larkplayer.feature.fcm.parser.PushEntityParseService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiverBridge" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.larkvideo.player.caller.main.MainProcessContentProvider" android:exported="false" android:name="com.dywx.larkplayer.caller.main.MainProcessContentProvider"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.dywx.larkplayer.module.base.activity.ContainerActivity" android:screenOrientation="behind" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.dywx.larkplayer.feature.web.ui.WebViewActivity" android:theme="@style/AppTheme.Night.Default"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.dywx.v4.gui.AudioPlayerActivity" android:screenOrientation="portrait" android:theme="@style/Translucent.Night.Theme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.dywx.v4.gui.PlayerDetailsTranslucentActivity" android:screenOrientation="portrait" android:theme="@style/Translucent.Night.Theme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.dywx.v4.gui.PlayerDetailsOpaqueActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Night.Default" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.dywx.larkplayer.module.other.setting.BatteryGuideActivity" android:theme="@style/TransparentTheme"/>
+        <provider android:authorities="com.larkvideo.player.MMKVPreferencesInitializationProvider" android:enabled="true" android:exported="false" android:initOrder="101" android:name="com.dywx.larkplayer.provider.MMKVPreferencesInitializationProvider"/>
+        <receiver android:exported="false" android:name="com.dywx.larkplayer.safemode.receiver.SafeModeBroadReceiver" android:process=":report">
+            <intent-filter>
+                <action android:name="com.dywx.larkplaer.safemode.report"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.larkvideo.player.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.larkvideo.player.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.larkvideo.player.hybrid.initprovider" android:exported="false" android:initOrder="89" android:name="com.dywx.hybrid.InitProvider"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.larkvideo.player.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.larkvideo.player"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.version" android:value="6.0.0"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <provider android:authorities="com.larkvideo.player.com.liulishuo.okdownload" android:exported="false" android:name="com.liulishuo.okdownload.OkDownloadProvider"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.dywx.shortstab.activity.VerticalPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|uiMode|layoutDirection" android:excludeFromRecents="true" android:exported="true" android:icon="@drawable/ic_lock_in_vault" android:launchMode="singleInstance" android:name="com.dywx.safebox.activity.LockFromSendActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.NoTitleDialog.NoFloating">
+            <intent-filter android:label="@string/lock_in_private_folder">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter android:label="@string/lock_in_private_folder">
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base,ffmpeg_decoder,float_player,opensl_audio,safe_box,shorts_tab"/>
+    </application>
+</manifest>

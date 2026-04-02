@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="album_count">
+        <item quantity="one">%s álbum</item>
+        <item quantity="other">%s albums</item>
+    </plurals>
+    <plurals name="artist_count">
+        <item quantity="one">%s artista</item>
+        <item quantity="other">%s artistas</item>
+    </plurals>
+    <plurals name="authorize_uri_scan_songs_tips">
+        <item quantity="one">He encontrado 1 canción para usted</item>
+        <item quantity="other">Se han encontrado %d canciones para usted</item>
+    </plurals>
+    <plurals name="authorize_uri_scan_videos_tips">
+        <item quantity="one">Encontré 1 video para ti</item>
+        <item quantity="other">Se encontraron %d videos para ti</item>
+    </plurals>
+    <plurals name="daily_playlist_detail_songs">
+        <item quantity="one">%d Canción</item>
+        <item quantity="other">%d Canciones</item>
+    </plurals>
+    <plurals name="day_ago">
+        <item quantity="one">Hace %d día</item>
+        <item quantity="other">Hace %d días</item>
+    </plurals>
+    <plurals name="delete_file_dialog_content">
+        <item quantity="one">Una vez eliminado, el archivo no se puede recuperar.</item>
+        <item quantity="other">Una vez eliminados, los archivos no se pueden recuperar.</item>
+    </plurals>
+    <plurals name="delete_file_dialog_title">
+        <item quantity="one">¿Eliminar archivo?</item>
+        <item quantity="other">¿Eliminar %d archivos?</item>
+    </plurals>
+    <plurals name="delete_playlist_hint">
+        <item quantity="one">¿Estás seguro de que quieres borrar esta lista de reproducción?</item>
+        <item quantity="other">¿Estás seguro de que quieres eliminar estas listas de reproducción?</item>
+    </plurals>
+    <plurals name="delete_song_checkbox">
+        <item quantity="one">También borrar canción del dispositivo</item>
+        <item quantity="other">¿También borrar canciones del dispositivo?</item>
+    </plurals>
+    <plurals name="delete_song_dialog_content">
+        <item quantity="one">Una vez eliminada, la canción no se podrá recuperar.</item>
+        <item quantity="other">Una vez eliminadas, las canciones no se pueden recuperar.</item>
+    </plurals>
+    <plurals name="delete_song_dialog_title">
+        <item quantity="one">¿Borrar la canción?</item>
+        <item quantity="other">¿Eliminar %d canciones?</item>
+    </plurals>
+    <plurals name="delete_song_from_device">
+        <item quantity="one">¿Estás seguro de que quieres borrar esta canción del dispositivo?</item>
+        <item quantity="other">¿Estás seguro de que quieres eliminar estas canciones del dispositivo?</item>
+    </plurals>
+    <plurals name="delete_song_in_album">
+        <item quantity="one">¿Estás seguro de que quieres borrar este álbum y %s que contiene?</item>
+        <item quantity="other">¿Estás seguro de que quieres borrar estas álbumes y %s que contiene?</item>
+    </plurals>
+    <plurals name="delete_song_in_artist">
+        <item quantity="one">¿Estás seguro de que quieres borrar este artista y %s que contiene?</item>
+        <item quantity="other">¿Está seguro de que desea eliminar estos artistas y %s que contiene?</item>
+    </plurals>
+    <plurals name="delete_tip_all_fail">
+        <item quantity="one">Error, Lark Video no tiene permiso para eliminar este video</item>
+        <item quantity="other">Error, Lark Video no tiene permiso para eliminar estos videos</item>
+    </plurals>
+    <plurals name="delete_tip_part_fail">
+        <item quantity="one">Eliminación completada: %1$d video eliminado, %2$d fallaron</item>
+        <item quantity="other">Eliminación completada: %1$d videos eliminados, %2$d fallaron</item>
+    </plurals>
+    <plurals name="delete_video_checkbox">
+        <item quantity="one">También eliminar el vídeo del dispositivo</item>
+        <item quantity="other">También eliminar vídeos del dispositivo</item>
+    </plurals>
+    <plurals name="delete_video_checkbox_new">
+        <item quantity="one">También eliminar video</item>
+        <item quantity="other">También eliminar videos</item>
+    </plurals>
+    <plurals name="delete_video_dialog_content">
+        <item quantity="one">Una vez eliminado, el vídeo no se podrá recuperar.</item>
+        <item quantity="other">Una vez eliminados, los vídeos no se pueden recuperar.</item>
+    </plurals>
+    <plurals name="delete_video_dialog_title">
+        <item quantity="one">¿Eliminar video?</item>
+        <item quantity="other">¿Eliminar %d vídeos?</item>
+    </plurals>
+    <plurals name="delete_video_playlist_hint">
+        <item quantity="one">¿Estás seguro de eliminar la lista de reproducción? Tus vídeos no se eliminarán</item>
+        <item quantity="other">¿Estás seguro de eliminar %d listas de reproducción? Tus vídeos no se eliminarán</item>
+    </plurals>
+    <plurals name="delete_video_playlist_tip">
+        <item quantity="one">¿Estás seguro de que quieres eliminar la lista de reproducción?</item>
+        <item quantity="other">¿Estás seguro de que quieres eliminar las listas de reproducción?</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avanzar %d segundo</item>
+        <item quantity="other">Avanzar %d segundos</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Retroceder %d segundo</item>
+        <item quantity="other">Retroceder %d segundos</item>
+    </plurals>
+    <plurals name="file_move_to_recently_deleted_snack">
+        <item quantity="one">%1$d archivo ha sido movido a ‘Eliminados recientemente’</item>
+        <item quantity="many">%1$d archivo ha sido movido a ‘Eliminados recientemente’</item>
+        <item quantity="other">%1$d archivos han sido movidos a ‘Eliminados recientemente’</item>
+    </plurals>
+    <plurals name="file_not_exist_sdcard_unmount">
+        <item quantity="one">Algo está mal con la tarjeta SD. Actualice o elimina este archivo de la lista.</item>
+        <item quantity="other">Algo está mal con la tarjeta SD, actualice o elimine todos estos %d archivos de la lista.</item>
+    </plurals>
+    <plurals name="files_quantity">
+        <item quantity="one">1 archivo</item>
+        <item quantity="many">1 archivo</item>
+        <item quantity="other">%d archivos</item>
+    </plurals>
+    <plurals name="flies_quantity">
+        <item quantity="one">1 archivo</item>
+        <item quantity="other">%d archivos</item>
+    </plurals>
+    <plurals name="hour_ago">
+        <item quantity="one">Hace %d hora</item>
+        <item quantity="other">Hace %d horas</item>
+    </plurals>
+    <plurals name="lark_player_songs_count">
+        <item quantity="one">por Lark Video · 1 canción</item>
+        <item quantity="other">por Lark Video · %d canciones</item>
+    </plurals>
+    <plurals name="less_than_days">
+        <item quantity="one">%d día</item>
+        <item quantity="many">%d día</item>
+        <item quantity="other">%d días</item>
+    </plurals>
+    <plurals name="library_videos_quantity">
+        <item quantity="one">%s Vídeo</item>
+        <item quantity="other">%s Vídeos</item>
+    </plurals>
+    <plurals name="locking_videos">
+        <item quantity="one">Bloqueando %d vídeo</item>
+        <item quantity="other">Bloqueando %d vídeos</item>
+    </plurals>
+    <plurals name="minute_ago">
+        <item quantity="one">Hace %d minuto</item>
+        <item quantity="other">Hace %d minutos</item>
+    </plurals>
+    <plurals name="month_ago">
+        <item quantity="one">Hace %d mes</item>
+        <item quantity="other">Hace %d meses</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificación nueva</item>
+        <item quantity="other">%d notificaciones nuevas</item>
+    </plurals>
+    <plurals name="multiple_delete_album_file_num">
+        <item quantity="one">%d archivo</item>
+        <item quantity="other">%d archivos</item>
+    </plurals>
+    <plurals name="multiple_delete_from_device">
+        <item quantity="one">¿Eliminar permanentemente %d video de su dispositivo?</item>
+        <item quantity="other">¿Eliminar permanentemente %d videos de su dispositivo?</item>
+    </plurals>
+    <plurals name="new_songs_title">
+        <item quantity="one">Se ha añadido una nueva canción. Toca para reproducir.</item>
+        <item quantity="other">Se han añadido %1$d nuevas canciones. Toca para reproducir.</item>
+    </plurals>
+    <plurals name="new_songs_title_new">
+        <item quantity="one">Nueva canción agregada, toca para reproducirla ahora.</item>
+        <item quantity="other">%1$d canciones nuevas agregadas, toca para reproducirlas ahora.</item>
+    </plurals>
+    <plurals name="new_videos_found">
+        <item quantity="one">¡1 nuevo vídeo encontrado!</item>
+        <item quantity="other">¡Se encontraron %1$d vídeos nuevos!</item>
+    </plurals>
+    <plurals name="new_videos_title">
+        <item quantity="one">Nuevo video agregado, toca para reproducirlo ahora.</item>
+        <item quantity="other">%1$d Nuevos videos agregados, toca para reproducirlos ahora.</item>
+    </plurals>
+    <plurals name="new_videos_title_new">
+        <item quantity="one">Se agregó un nuevo video, toque para reproducirlo ahora.</item>
+        <item quantity="other">Se agregaron %1$d videos nuevos, toca para reproducir ahora.</item>
+    </plurals>
+    <plurals name="play_count">
+        <item quantity="one">%s vez</item>
+        <item quantity="other">%s veces</item>
+    </plurals>
+    <plurals name="playlist_delete_message">
+        <item quantity="one">1 video se moverá a Eliminados recientemente y será eliminado después de 30 días.</item>
+        <item quantity="other">%1$d videos se moverán a Eliminados recientemente y serán eliminados después de 30 días.</item>
+    </plurals>
+    <plurals name="remove_song_in_playlist">
+        <item quantity="one">¿Estás seguro de que quieres eliminar esta canción de la lista de reproducción?</item>
+        <item quantity="other">¿Estás seguro de que quieres eliminar estas canciones de la lista de reproducción?</item>
+    </plurals>
+    <plurals name="remove_video_from_playlist_hint">
+        <item quantity="one">¿Estás seguro de que quieres eliminar este vídeo de la lista de reproducción?</item>
+        <item quantity="other">¿Estás seguro de que deseas eliminar %d videos de la lista de reproducción?</item>
+    </plurals>
+    <plurals name="remove_video_from_playlist_tip">
+        <item quantity="one">¿Estás seguro de que deseas eliminar este vídeo de la lista de reproducción?</item>
+        <item quantity="other">¿Estás seguro de que deseas eliminar estos vídeos de la lista de reproducción?</item>
+    </plurals>
+    <plurals name="scan_songs_found">
+        <item quantity="one">¡%d canciones encontradas!</item>
+        <item quantity="other">¡%d canciones encontradas!</item>
+    </plurals>
+    <plurals name="scan_songs_found2">
+        <item quantity="one">"%d Canción
+¡Encontrado!"</item>
+        <item quantity="other">"%d Canciones
+¡Encontrado!"</item>
+    </plurals>
+    <plurals name="songs_count">
+        <item quantity="one">%s Canción</item>
+        <item quantity="other">%s Canciones</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="one">1 canción</item>
+        <item quantity="other">%d Canciones</item>
+    </plurals>
+    <plurals name="task_reward">
+        <item quantity="one">+ 1 moneda</item>
+        <item quantity="other">+ %d monedas</item>
+    </plurals>
+    <plurals name="trash_file_dialog_content">
+        <item quantity="one">1 archivo se moverá a “Eliminados recientemente” y se eliminará después de 30 días.</item>
+        <item quantity="many">1 archivo se moverá a “Eliminados recientemente” y se eliminará después de 30 días.</item>
+        <item quantity="other">%d archivos se moverán a “Eliminados recientemente” y se eliminarán después de 30 días.</item>
+    </plurals>
+    <plurals name="trash_song_dialog_content">
+        <item quantity="one">1 canción se moverá a “Eliminadas recientemente” y se eliminará después de 30 días.</item>
+        <item quantity="many">1 canción se moverá a “Eliminadas recientemente” y se eliminará después de 30 días.</item>
+        <item quantity="other">%d canciones se moverán a “Eliminadas recientemente” y se eliminarán después de 30 días.</item>
+    </plurals>
+    <plurals name="trash_video_dialog_content">
+        <item quantity="one">1 video se moverá a “Eliminados recientemente” y se eliminará después de 30 días.</item>
+        <item quantity="many">1 video se moverá a “Eliminados recientemente” y se eliminará después de 30 días.</item>
+        <item quantity="other">%d videos se moverán a “Eliminados recientemente” y se eliminarán después de 30 días.</item>
+    </plurals>
+    <plurals name="unlocking_videos">
+        <item quantity="one">Desbloqueando %d vídeo</item>
+        <item quantity="other">Desbloqueando %d vídeos</item>
+    </plurals>
+    <plurals name="video_locked_tip">
+        <item quantity="one">%d vídeo está bloqueado</item>
+        <item quantity="other">%d vídeos están bloqueados</item>
+    </plurals>
+    <plurals name="video_unlock_tip">
+        <item quantity="one">%d vídeo está desbloqueado</item>
+        <item quantity="other">%d videos están desbloqueados</item>
+    </plurals>
+    <plurals name="videos_quantity">
+        <item quantity="one">1 Vídeo</item>
+        <item quantity="other">%d Vídeos</item>
+    </plurals>
+    <plurals name="view_hidden_folders">
+        <item quantity="one">Ver 1 carpeta oculta</item>
+        <item quantity="other">Ver %d carpetas ocultas</item>
+    </plurals>
+    <plurals name="x_song_selected">
+        <item quantity="one">%d canción seleccionada</item>
+        <item quantity="other">%d canciones seleccionadas</item>
+    </plurals>
+</resources>

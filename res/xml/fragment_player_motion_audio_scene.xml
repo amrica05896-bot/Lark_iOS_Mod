@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition android:id="@id/show" app:constraintSetEnd="@id/audio_detail_state" app:constraintSetStart="@id/audio_mini_state" app:duration="600" app:motionInterpolator="cubic-bezier(.56,1.25,.6,1)">
+        <OnSwipe app:dragDirection="dragUp" app:dragThreshold="30.0" app:touchAnchorId="@id/mini_background" app:touchAnchorSide="top" />
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="0.0" app:framePosition="17" app:motionTarget="@id/tv_artist" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="17" app:motionTarget="@id/tv_title_container" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="17" app:motionTarget="@id/song_title" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="17" app:motionTarget="@id/song_subtitle" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="80" app:motionTarget="@id/action_more" />
+        </KeyFrameSet>
+    </Transition>
+    <ViewTransition android:id="@id/guide_exit" app:duration="300" app:motionTarget="@id/tv_guide" app:onStateTransition="sharedValueSet" app:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="0.0" android:translationY="-80.0dp" app:framePosition="100" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="50" />
+        </KeyFrameSet>
+    </ViewTransition>
+    <ViewTransition android:id="@id/guide_in" app:duration="300" app:motionTarget="@id/tv_guide2" app:onStateTransition="sharedValueSet" app:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="1.0" android:translationY="0.0dp" app:framePosition="100" />
+        </KeyFrameSet>
+    </ViewTransition>
+    <ViewTransition app:duration="150" app:motionTarget="press_anim" app:onStateTransition="actionDownUp" app:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyAttribute android:scaleX="0.8" android:scaleY="0.8" app:framePosition="100" />
+        </KeyFrameSet>
+    </ViewTransition>
+    <Transition android:id="@id/show_playing_list" app:autoTransition="none" app:constraintSetEnd="@id/audio_playing_list_state" app:constraintSetStart="@id/audio_detail_state" app:duration="400" app:motionInterpolator="cubic-bezier(.2,0,.4,1)" app:pathMotionArc="none">
+        <OnSwipe app:dragDirection="dragUp" app:limitBoundsTo="@id/play_queue_root_container" app:touchAnchorSide="top" />
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="0.0" app:framePosition="80" app:motionTarget="@id/tv_artist" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="80" app:motionTarget="@id/tv_title_container" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="30" app:motionTarget="@id/song_title" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="30" app:motionTarget="@id/song_subtitle" />
+        </KeyFrameSet>
+    </Transition>
+    <Transition android:id="@id/forward" app:constraintSetEnd="@id/carousel_next" app:constraintSetStart="@id/audio_detail_state" app:duration="300" app:motionInterpolator="linear">
+        <OnSwipe app:dragDirection="dragStart" app:onTouchUp="autoComplete" app:touchAnchorSide="start" />
+    </Transition>
+    <Transition android:id="@id/backward" app:constraintSetEnd="@id/carousel_previous" app:constraintSetStart="@id/audio_detail_state" app:duration="300" app:motionInterpolator="cubic-bezier(.2,0,.4,1)">
+        <OnSwipe app:dragDirection="dragEnd" app:onTouchUp="autoComplete" app:touchAnchorSide="end" />
+    </Transition>
+    <Transition android:id="@id/forward_mini" app:constraintSetEnd="@id/carousel_next_mini" app:constraintSetStart="@id/audio_mini_state" app:duration="300" app:motionInterpolator="cubic-bezier(.2,0,.4,1)">
+        <OnSwipe app:dragDirection="dragStart" app:touchAnchorId="@id/tv_title_container_right" app:touchAnchorSide="start" />
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="0.0" app:framePosition="30" app:motionTarget="@id/container_audio_cover_right" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="30" app:motionTarget="@id/tv_title_container_right" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="30" app:motionTarget="@id/tv_artist_right" />
+        </KeyFrameSet>
+    </Transition>
+    <Transition android:id="@id/backward_mini" app:constraintSetEnd="@id/carousel_previous_mini" app:constraintSetStart="@id/audio_mini_state" app:duration="300" app:motionInterpolator="cubic-bezier(.2,0,.4,1)">
+        <OnSwipe app:dragDirection="dragEnd" app:touchAnchorId="@id/tv_title_container_left" app:touchAnchorSide="end" />
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="0.0" app:framePosition="70" app:motionTarget="@id/container_audio_cover_main" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="70" app:motionTarget="@id/tv_title_container" />
+            <KeyAttribute android:alpha="0.0" app:framePosition="70" app:motionTarget="@id/tv_artist" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@id/audio_mini_state">
+        <Constraint android:id="@id/mini_background" android:layout_width="match_parent" android:layout_height="@dimen/mini_bar_height_new" app:layout_constraintBottom_toBottomOf="@id/motion_bottom_guide_view" />
+        <ConstraintOverride android:id="@id/bottom_guide_view" android:layout_marginBottom="-500.0dp" />
+        <ConstraintOverride android:id="@id/ad_layout_container" android:visibility="gone" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/container_audio_cover_main" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <ConstraintOverride android:id="@id/song_title_left" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_subtitle_left" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_title_right" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_subtitle_right" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/tv_title_container_left" android:visibility="visible" android:alpha="0.0" />
+        <ConstraintOverride android:id="@id/tv_artist_left" android:alpha="0.0" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/tv_title_container_right" android:visibility="visible" android:alpha="0.0" />
+        <ConstraintOverride android:id="@id/tv_artist_right" android:alpha="0.0" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/container_audio_cover_left" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:alpha="0.0" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginEnd="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tv_title_container_left" />
+        <Constraint android:id="@id/container_audio_cover_right" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:alpha="0.0" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="parent" />
+        <Constraint android:id="@id/song_title" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="0.0dp" android:alpha="0.0" android:scaleX="0.5" android:scaleY="0.5" app:layout_constraintBottom_toBottomOf="@id/tv_title_container" app:layout_constraintEnd_toEndOf="@id/end_guide_line" app:layout_constraintStart_toStartOf="@id/start_guide_line" app:layout_constraintTop_toTopOf="@id/tv_title_container" app:lp_useLineSpacingExtra="false" />
+        <Constraint android:id="@id/song_subtitle" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="0.0dp" android:alpha="0.0" android:scaleX="0.5" android:scaleY="0.5" app:layout_constraintBottom_toBottomOf="@id/tv_artist" app:layout_constraintEnd_toStartOf="@id/action_more" app:layout_constraintStart_toStartOf="@id/start_guide_line" app:layout_constraintTop_toTopOf="@id/tv_artist" app:lp_useLineSpacingExtra="false" />
+        <ConstraintOverride android:id="@id/action_more" android:visibility="invisible" android:alpha="0.0" />
+        <Constraint android:id="@id/tv_title_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_normal" android:layout_marginEnd="@dimen/spacing_small" app:layout_constraintBottom_toTopOf="@id/tv_artist" app:layout_constraintEnd_toStartOf="@id/mini_button_background" app:layout_constraintStart_toEndOf="@id/container_audio_cover_main" app:layout_constraintTop_toTopOf="@id/mini_button_background" app:layout_constraintVertical_chainStyle="packed" />
+        <Constraint android:id="@id/tv_artist" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" app:layout_constraintBottom_toBottomOf="@id/mini_button_background" app:layout_constraintEnd_toEndOf="@id/tv_title_container" app:layout_constraintStart_toStartOf="@id/tv_title_container" app:layout_constraintTop_toBottomOf="@id/tv_title_container" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/mini_button_background" android:visibility="visible" />
+        <ConstraintOverride android:id="@id/progress_mini" android:visibility="visible" android:alpha="1.0" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/audio_detail_state">
+        <ConstraintOverride android:id="@id/tv_artist" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/song_subtitle" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/song_subtitle_left" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/song_subtitle_right" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/progress" android:layout_height="40.0dp" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/audio_playing_list_state">
+        <Constraint android:id="@id/container_audio_cover_main" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="40.0dp" android:layout_marginStart="16.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/song_title" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="0.0dp" android:alpha="0.0" android:scaleX="0.5" android:scaleY="0.5" app:layout_constraintBottom_toBottomOf="@id/tv_title_container" app:layout_constraintEnd_toEndOf="@id/end_guide_line" app:layout_constraintStart_toStartOf="@id/start_guide_line" app:layout_constraintTop_toTopOf="@id/tv_title_container" />
+        <Constraint android:id="@id/song_subtitle" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="0.0dp" android:alpha="0.0" android:scaleX="0.5" android:scaleY="0.5" app:layout_constraintBottom_toBottomOf="@id/tv_artist" app:layout_constraintEnd_toStartOf="@id/action_more" app:layout_constraintStart_toStartOf="@id/start_guide_line" app:layout_constraintTop_toTopOf="@id/tv_artist" />
+        <ConstraintOverride android:id="@id/action_more" android:visibility="invisible" android:alpha="0.0" />
+        <ConstraintOverride android:id="@id/action_focus" android:visibility="visible" android:alpha="1.0" />
+        <Constraint android:id="@id/tv_title_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_normal" android:layout_marginEnd="@dimen/spacing_small" app:layout_constraintBottom_toTopOf="@id/tv_artist" app:layout_constraintEnd_toStartOf="@id/action_focus" app:layout_constraintStart_toEndOf="@id/container_audio_cover_main" app:layout_constraintTop_toTopOf="@id/container_audio_cover_main" app:layout_constraintVertical_chainStyle="packed" />
+        <Constraint android:id="@id/tv_artist" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" app:layout_constraintBottom_toBottomOf="@id/container_audio_cover_main" app:layout_constraintEnd_toEndOf="@id/tv_title_container" app:layout_constraintStart_toStartOf="@id/tv_title_container" app:layout_constraintTop_toBottomOf="@id/tv_title_container" app:lp_useLineSpacingExtra="false" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/play_queue_root_container" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/container_audio_cover_main" />
+        <ConstraintOverride android:id="@id/top_click_mask" android:visibility="visible" />
+        <Constraint android:id="@id/ad_layout_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="400.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/container_audio_cover_main" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/carousel_next">
+        <ConstraintOverride android:id="@id/progress" android:layout_height="40.0dp" />
+        <Constraint android:id="@id/container_audio_cover_main" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/container_audio_cover_right" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/container_audio_cover_right" />
+        <Constraint android:id="@id/song_title" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/container_audio_cover_main" app:layout_constraintStart_toStartOf="@id/container_audio_cover_main" app:layout_constraintTop_toBottomOf="@id/container_audio_cover_main" />
+        <Constraint android:id="@id/song_subtitle" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/action_more" app:layout_constraintEnd_toStartOf="@id/action_more" app:layout_constraintStart_toStartOf="@id/container_audio_cover_main" app:layout_constraintTop_toTopOf="@id/action_more" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/action_more" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="4.0dp" android:layout_marginEnd="@dimen/spacing_large" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/song_title" />
+        <Constraint android:id="@id/container_audio_cover_right" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/song_title_right" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/end_guide_line" app:layout_constraintStart_toStartOf="@id/start_guide_line" app:layout_constraintTop_toBottomOf="@id/container_audio_cover_right" app:lp_useLineSpacingExtra="false" />
+        <Constraint android:id="@id/song_subtitle_right" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/action_more_right" app:layout_constraintEnd_toStartOf="@id/action_more_right" app:layout_constraintStart_toStartOf="@id/start_guide_line" app:layout_constraintTop_toTopOf="@id/action_more_right" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/action_more_right" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="4.0dp" app:layout_constraintEnd_toEndOf="@id/end_guide_line" app:layout_constraintTop_toBottomOf="@id/song_title_right" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/carousel_previous">
+        <ConstraintOverride android:id="@id/progress" android:layout_height="40.0dp" />
+        <Constraint android:id="@id/container_audio_cover_main" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/container_audio_cover_left" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintStart_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/container_audio_cover_left" />
+        <Constraint android:id="@id/song_title" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/container_audio_cover_main" app:layout_constraintStart_toStartOf="@id/container_audio_cover_main" app:layout_constraintTop_toBottomOf="@id/container_audio_cover_main" />
+        <Constraint android:id="@id/song_subtitle" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/action_more" app:layout_constraintEnd_toStartOf="@id/action_more" app:layout_constraintStart_toStartOf="@id/container_audio_cover_main" app:layout_constraintTop_toTopOf="@id/action_more" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/container_audio_cover_left" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/song_title_left" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/end_guide_line" app:layout_constraintStart_toStartOf="@id/start_guide_line" app:layout_constraintTop_toBottomOf="@id/container_audio_cover_left" app:lp_useLineSpacingExtra="false" />
+        <Constraint android:id="@id/song_subtitle_left" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/action_more_left" app:layout_constraintEnd_toStartOf="@id/action_more_left" app:layout_constraintStart_toStartOf="@id/start_guide_line" app:layout_constraintTop_toTopOf="@id/action_more_left" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/action_more_left" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="4.0dp" app:layout_constraintEnd_toEndOf="@id/end_guide_line" app:layout_constraintTop_toBottomOf="@id/song_title_left" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/carousel_next_mini">
+        <ConstraintOverride android:id="@id/ad_layout_container" android:visibility="gone" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/mini_background" android:layout_width="match_parent" android:layout_height="@dimen/mini_bar_height_new" app:layout_constraintBottom_toBottomOf="@id/motion_bottom_guide_view" />
+        <ConstraintOverride android:id="@id/bottom_guide_view" android:layout_marginBottom="-500.0dp" />
+        <ConstraintOverride android:id="@id/ad_layout_container" android:visibility="gone" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/action_more" android:visibility="invisible" android:alpha="0.0" />
+        <ConstraintOverride android:id="@id/mini_button_background" android:visibility="visible" />
+        <ConstraintOverride android:id="@id/progress_mini" android:visibility="visible" android:alpha="1.0" />
+        <ConstraintOverride android:id="@id/song_title" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_subtitle" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_title_left" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_subtitle_left" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_title_right" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_subtitle_right" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/tv_artist_left" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/tv_artist_right" android:alpha="1.0" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/container_audio_cover_main" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:alpha="0.0" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" android:layout_marginEnd="@dimen/spacing_normal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tv_title_container" />
+        <Constraint android:id="@id/tv_title_container" android:layout_width="152.0dp" android:layout_height="wrap_content" android:alpha="0.0" android:layout_marginStart="@dimen/spacing_normal" android:layout_marginEnd="120.0dp" app:layout_constraintBottom_toTopOf="@id/tv_artist" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/mini_button_background" app:layout_constraintVertical_chainStyle="packed" />
+        <Constraint android:id="@id/tv_artist" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:alpha="0.0" app:layout_constraintBottom_toBottomOf="@id/mini_button_background" app:layout_constraintEnd_toEndOf="@id/tv_title_container" app:layout_constraintStart_toStartOf="@id/tv_title_container" app:layout_constraintTop_toBottomOf="@id/tv_title_container" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/container_audio_cover_right" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:alpha="1.0" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <Constraint android:id="@id/tv_title_container_right" android:layout_width="152.0dp" android:layout_height="wrap_content" android:alpha="1.0" android:layout_marginStart="@dimen/spacing_normal" android:layout_marginEnd="@dimen/spacing_small" app:layout_constraintBottom_toTopOf="@id/tv_artist_right" app:layout_constraintEnd_toStartOf="@id/mini_button_background" app:layout_constraintStart_toEndOf="@id/container_audio_cover_right" app:layout_constraintTop_toTopOf="@id/mini_button_background" app:layout_constraintVertical_chainStyle="packed" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/carousel_previous_mini">
+        <ConstraintOverride android:id="@id/ad_layout_container" android:visibility="gone" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/mini_background" android:layout_width="match_parent" android:layout_height="@dimen/mini_bar_height_new" app:layout_constraintBottom_toBottomOf="@id/motion_bottom_guide_view" />
+        <ConstraintOverride android:id="@id/bottom_guide_view" android:layout_marginBottom="-500.0dp" />
+        <ConstraintOverride android:id="@id/ad_layout_container" android:visibility="gone" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/action_more" android:visibility="invisible" android:alpha="0.0" />
+        <ConstraintOverride android:id="@id/mini_button_background" android:visibility="visible" />
+        <ConstraintOverride android:id="@id/progress_mini" android:visibility="visible" android:alpha="1.0" />
+        <ConstraintOverride android:id="@id/song_title" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_subtitle" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_title_left" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_subtitle_left" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_title_right" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/song_subtitle_right" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/tv_artist_left" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/tv_artist_right" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/container_audio_cover_main" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:alpha="0.0" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" android:layout_marginEnd="@dimen/spacing_normal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="parent" />
+        <Constraint android:id="@id/tv_title_container" android:layout_width="152.0dp" android:layout_height="wrap_content" android:alpha="0.0" android:layout_marginStart="@dimen/spacing_normal" android:layout_marginEnd="@dimen/spacing_normal" app:layout_constraintBottom_toTopOf="@id/tv_artist" app:layout_constraintStart_toEndOf="@id/container_audio_cover_main" app:layout_constraintTop_toTopOf="@id/mini_button_background" app:layout_constraintVertical_chainStyle="packed" />
+        <Constraint android:id="@id/tv_artist" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:alpha="0.0" app:layout_constraintBottom_toBottomOf="@id/mini_button_background" app:layout_constraintEnd_toEndOf="@id/tv_title_container" app:layout_constraintStart_toStartOf="@id/tv_title_container" app:layout_constraintTop_toBottomOf="@id/tv_title_container" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/container_audio_cover_right" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:alpha="0.0" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/tv_title_container" />
+        <Constraint android:id="@id/container_audio_cover_left" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:alpha="1.0" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <Constraint android:id="@id/tv_title_container_left" android:layout_width="152.0dp" android:layout_height="wrap_content" android:alpha="1.0" android:layout_marginStart="@dimen/spacing_normal" android:layout_marginEnd="@dimen/spacing_small" app:layout_constraintBottom_toTopOf="@id/tv_artist_left" app:layout_constraintEnd_toStartOf="@id/mini_button_background" app:layout_constraintStart_toEndOf="@id/container_audio_cover_left" app:layout_constraintTop_toTopOf="@id/mini_button_background" app:layout_constraintVertical_chainStyle="packed" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/audio_play_guide">
+        <Constraint android:id="@id/mini_background" android:layout_width="match_parent" android:layout_height="@dimen/mini_bar_height_new" app:layout_constraintBottom_toBottomOf="@id/motion_bottom_guide_view" />
+        <ConstraintOverride android:id="@id/bottom_guide_view" android:layout_marginBottom="-500.0dp" />
+        <ConstraintOverride android:id="@id/ad_layout_container" android:visibility="gone" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/container_audio_cover_main" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <ConstraintOverride android:id="@id/tv_guide" android:visibility="visible" android:alpha="1.0" android:translationY="0.0dp" />
+        <ConstraintOverride android:id="@id/tv_guide2" android:visibility="visible" android:alpha="0.0" android:translationY="@dimen/mini_bar_height_new" />
+        <Constraint android:id="@id/container_audio_cover_main" android:layout_width="@dimen/mini_bar_height_new" android:layout_height="@dimen/mini_bar_height_new" android:layout_marginBottom="0.0dp" android:scaleX="1.0" android:scaleY="1.0" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <ConstraintOverride android:id="@id/song_title" android:visibility="invisible" android:alpha="0.0" />
+        <ConstraintOverride android:id="@id/song_subtitle" android:visibility="invisible" android:alpha="0.0" />
+        <ConstraintOverride android:id="@id/action_more" android:visibility="invisible" android:alpha="0.0" />
+        <ConstraintOverride android:id="@id/tv_title_container" android:visibility="invisible" />
+        <ConstraintOverride android:id="@id/tv_artist" android:visibility="invisible" app:visibilityMode="ignore" />
+        <ConstraintOverride android:id="@id/mini_button_background" android:visibility="visible" />
+        <ConstraintOverride android:id="@id/progress_mini" android:visibility="visible" android:alpha="1.0" />
+    </ConstraintSet>
+</MotionScene>

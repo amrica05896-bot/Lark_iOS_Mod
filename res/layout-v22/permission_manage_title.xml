@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/permission_manage_title_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="?content_soft" android:gravity="start|center" android:layout_gravity="bottom" android:id="@id/title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_medium" android:layout_marginTop="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_medium" android:layout_marginBottom="@dimen/spacing_small" android:includeFontPadding="false" android:textAlignment="viewStart" android:layout_marginHorizontal="@dimen/spacing_medium" style="@style/Title" />
+</FrameLayout>

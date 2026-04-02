@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/error_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" app:srcCompat="@drawable/ic_error" />
+    <TextView android:textSize="16.0sp" android:textColor="?content_soft" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:text="@string/wrong_with_try_again" />
+</LinearLayout>

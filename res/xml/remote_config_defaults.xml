@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>low_memory_tip_limit_in_day</key>
+        <value>7</value>
+    </entry>
+    <entry>
+        <key>show_like_guide_v2</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>trending_h5_switch</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>api_path</key>
+        <value>https://api.larkvideoplayer.com</value>
+    </entry>
+    <entry>
+        <key>suggestion_api</key>
+        <value>http://clients1.google.com/complete/search?nolabels=t&amp;client=youtube&amp;ds=yt</value>
+    </entry>
+    <entry>
+        <key>unlock_download_count_down_time_config</key>
+        <value>{|enabled|:true, |unlock_download_count_down_millseconds|: 5000}</value>
+    </entry>
+    <entry>
+        <key>unlock_play_count_down_time_config</key>
+        <value>{|enabled|:true, |unlock_play_count_down_millseconds|: 5000}</value>
+    </entry>
+    <entry>
+        <key>copyright_download_float_window_config</key>
+        <value>{|enabled|:true, |cancelable|: false, |init_show_time_millseconds|: 5000, |after_click_show_time_millseconds|: 3000}</value>
+    </entry>
+    <entry>
+        <key>ignored_crashes</key>
+        <value> { |crash_list|: [
+            { |name|: |IllegalStateException|, |message|: |Results have already been set|, |class_path|: |IF.a| },
+            { |name|: |IllegalStateException|, |message|: |Results have already been set|, |class_path|: |nU.a| },
+            { |name|: |IllegalStateException|, |message|: |Results have already been set|, |class_path|: |com.google.android.gms.common.internal| },
+            { |name|: |NullPointerException|, |message|: |Attempt to invoke interface method|, |class_path|: |com.google.android.gms.internal| },
+            { |name|: |NullPointerException|, |message|: |Attempt to read from field|, |class_path|: |com.google.android.gms.ads.internal| },
+            { |name|: |RuntimeException|, |message|: |Exception|, |class_path|: |com.facebook.ads.internal.dynamicloading.DynamicLoaderFactory| },
+            { |name|: |NotFoundException|, |message|: |Resource ID|, |class_path|: |android.content.res.ResourcesImpl.getValue| },
+            { |name|: |RuntimeException|, |message|: |Using WebView from more than one process at once with the same data directory is not supported|, |class_path|: |org.chromium.android_webview.AwDataDirLock| },
+            { |name|: |IllegalStateException|, |message|: |Another SimpleCache instance uses the folder|, |class_path|: |com.facebook.ads.redexgen.X.UJ| },
+            { |name|: |NullPointerException|, |message|: |-|, |class_path|: |com.google.android.gms.internal.zzdyx.zza| } ] }</value>
+    </entry>
+    <entry>
+        <key>page_tracker_enable</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>web_player_type_config</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>search_engine_policy</key>
+        <value>[web]</value>
+    </entry>
+    <entry>
+        <key>draw_overlays_config</key>
+        <value>{|local_count|: 0,|online_count|: -1,|show_timing|: |before_play|}</value>
+    </entry>
+    <entry>
+        <key>storage_permission_config</key>
+        <value>{|interval_day|: 0,|interval_count|: 0,|frequency_count|: 3,|show_guide_dialog|: false}</value>
+    </entry>
+    <entry>
+        <key>share_base_url</key>
+        <value>https://www.larkvideoplayer.com</value>
+    </entry>
+    <entry>
+        <key>video_tabs_order</key>
+        <value>{|videos|:|2|,|recent_videos|:|1|,|folders|:|3|}</value>
+    </entry>
+    <entry>
+        <key>click_online_song_player_play</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>click_song_player_play</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>chart_playlist_config</key>
+        <value>{|type|:1}</value>
+    </entry>
+    <entry>
+        <key>fm_valid_played_time</key>
+        <value>[15]</value>
+    </entry>
+    <entry>
+        <key>sign_in_config</key>
+        <value>{|reward_coins|:{|1-2|:|5|,|3-4|:|8|,|5-6|:|10|,|other|:|random|}}</value>
+    </entry>
+    <entry>
+        <key>lp_push_permission_config</key>
+        <value>{|interval_day|: 7,|frequency_count|: 3,|frequency_window|: 30,|close_window|: 30}</value>
+    </entry>
+    <entry>
+        <key>share_install_url</key>
+        <value>https://www.larkvideoplayer.com/shareapp</value>
+    </entry>
+    <entry>
+        <key>music_tabs_config</key>
+        <value>{|select_tab|:|songs|,
+            |music_tabs_order|:{|1|:|for_you|,|2|:|songs|,|3|:|playlists|,|5|:|albums|,|6|:|artists|,|4|:|folder|}}</value>
+    </entry>
+    <entry>
+        <key>home_page_component_order</key>
+        <value>{"last_played":10,"playlists_for_you":20,"last_added":30,"mostly_played":40,"liked_songs":50,"last_played_video":60,"playback":70,"library":80}</value>
+    </entry>
+    <entry>
+        <key>play_mode_config</key>
+        <value>{"songs_config":"A","playlist_config":"A"}</value>
+    </entry>
+    <entry>
+        <key>video_show_play_next</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>long_video_progress_threshold</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>mini_bar_display_config</key>
+        <value>playlist</value>
+    </entry>
+    <entry>
+        <key>player_operation_show_max_length</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>ok_download_config</key>
+        <value>{"readTimeout":30000,"writeTimeout":30000,"connectTimeout":30000}</value>
+    </entry>
+    <entry>
+        <key>default_remote_background_config</key>
+        <value> {"enable":true,"fetch_count":5,"preload_count":1,"interval_day":3,"start_delay_day":2} </value>
+    </entry>
+    <entry>
+        <key>video_typesetting</key>
+        <value>{"default": "grid","types": ["grid","list"]}</value>
+    </entry>
+    <entry>
+        <key>scan_float_window_size</key>
+        <value>-1</value>
+    </entry>
+    <entry>
+        <key>google_drive_status</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>hook_broadcast_screen_status</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>hook_broadcast_screen_version</key>
+        <value>26</value>
+    </entry>
+    <entry>
+        <key>ignoring_battery_config</key>
+        <value>{"enable":true,"count":3}</value>
+    </entry>
+    <entry>
+        <key>lp_apm_config</key>
+        <value>{"apmEnable":true,"fpsEnable":false,"runMemEnable":true,"commonEnable":true,"evilTraceEnable":false,"fpsInterval":10000,"runMemInterval":60000,"commonInterval":60000,"evilInterval":3000}</value>
+    </entry>
+    <entry>
+        <key>internal_of_report_fcm_to_server_config</key>
+        <value>168</value>
+    </entry>
+    <entry>
+        <key>remote_config_clear_record_day</key>
+        <value>38</value>
+    </entry>
+    <entry>
+        <key>remote_config_clear_record_row_count</key>
+        <value>1500</value>
+    </entry>
+    <entry>
+        <key>push_filter_config</key>
+        <value>{"total_count_in_day":5,"expire_interval_hours":168}</value>
+    </entry>
+    <entry>
+        <key>online_search_config</key>
+        <value>{"enable":true,"search_engine":"youtube"}</value>
+    </entry>
+    <entry>
+        <key>firebase_non_fatal_enable</key>
+        <value>{"catch":true,"play":true,"ad":false,"scan":false,"other":false}</value>
+    </entry>
+    <entry>
+        <key>switch_opensl_audiosink</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>switch_rate_to_gp</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>mini_bar_anim_config</key>
+        <value>{"switch_mini_bar_anim":0}</value>
+    </entry>
+    <entry>
+        <key>shuffle_config</key>
+        <value>{"shuffle_strategy_type":0,
+            "shuffle_familiar_min_media_count":50,
+            "familiar_rate":0.33,
+            "weight_like_factor":1.2,
+            "weight_lyrics_factor":1.2,
+            "weight_last_modify_factor":1.2,
+            "weight_switch_song_factor":0.8,
+            "weight_1day_play_before_factor":0.7,
+            "weight_2day_play_before_factor":0.8,
+            "weight_3day_play_before_factor":0.9,
+            "switch_song_rate":0.2,
+            "familiar_pick_up_count":1,
+            "adjust_record":false,
+            "explore_pick_up_count":2
+            }</value>
+    </entry>
+    <entry>
+        <key>google_review_config</key>
+        <value>{"can_review_time_limit_min":259200000,"can_review_time_limit_max":2937600000,"can_review_play_songs_count":100,"can_review_count":0}</value>
+    </entry>
+    <entry>
+        <key>player_switch_opaque_theme</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>volume_enhanced_factor</key>
+        <value>5</value>
+    </entry>
+    <entry>
+        <key>purchase_verify_type</key>
+        <value>SERVER</value>
+    </entry>
+    <entry>
+        <key>push_storage_config</key>
+        <value>{"enable":true,"interval_day":1,"total_count": 3}</value>
+    </entry>
+    <entry>
+        <key>search_keyword_config</key>
+        <value>{
+            "enable": false,
+            "hint_word_config": {
+            "enable": false,
+            "begin_time": 1697040000000,
+            "end_time": 1697644800000
+            },
+            "hint_text": "recap",
+            "action": ""
+            }</value>
+    </entry>
+    <entry>
+        <key>listen_mv_config</key>
+        <value>{
+            "enable": true,
+            "hide_mv_in_songs": false,
+            "min_duration_second": 60,
+            "max_duration_second": 420,
+            "match_regex": "^(?=.*(?:Official|Oficial|Officiel|Lyrics|Lyric|[_ ]MV[_ ]|[_ ]DVD[_ ]|Music Video|FUNK|[_ ]DJ[_ ]|feat\\.|feat_|ft\\.|Remix|Live|AO VIVO|En vivo|Visualizer|prod\\.|cover|Acústica|music|song|[_ ]mix[_ ]|[_ ]MC[_ ]|[_ ]ost[_ ]|album|letra|أغنية|اغنية|cancion|canción|música|álbum|forro|forró|gospel|pagode|piseiro|sertanejo|reggae|salsa|vallenato|bachata|corrido|trap[_ ]|hiphop|cumbia|huapango|baladas|guaracha|boleros|acústico|playlist))(?!.*trailer)(?!.*teaser)(?!.*movie)(?!.*series)(?!.*tráiler)(?!.*vagina)(?!.*infanti)(?!.*parod)(?!.*prank)(?!.*anim)(?!.*desenho)(?!.*episod)(?!.*sex)(?!.*xvideo)(?!.*\\.com)(?!.*porn)(?!.*folla)(?!.*fuck)(?!.*commercial)(?!.*blog)(?!.*tutorial)(?!.*alarm)(?!.*wallpaper)(?!.*facebook[_ ]).*"
+            }</value>
+    </entry>
+    <entry>
+        <key>video_default_repeat_mode</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>file_format_count_enable</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>mediacodec_report_enable</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>exo_decoder_fallback_enable</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>ultimate_reset_switch</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>gp_review_video_played_time</key>
+        <value>80</value>
+    </entry>
+    <entry>
+        <key>local_player_type</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>feedback_config</key>
+        <value>{
+            "feedback_list_skip_cache": true,
+            "request_time_limit": 3600000,
+            "last_feedback_time_limit": 2592000000,
+            "categories": [
+            {
+            "tag": "cantplay",
+            "description": "Video can’t play",
+            "index": 1
+            },
+            {
+            "tag": "poorplay",
+            "description": "Poor video playback",
+            "index": 2
+            },
+            {
+            "tag": "file",
+            "description": "Video not found",
+            "index": 3
+            },
+            {
+            "tag": "permission",
+            "description": "Change file permission",
+            "index": 4
+            },
+            {
+            "tag": "vault",
+            "description": "Lock video",
+            "index": 5
+            }
+            ],
+            "sub_issues": [
+            {
+            "tag": "cantplay",
+            "subtitle": "Select the issue you are having",
+            "issues": [
+            {
+            "tag": "4k",
+            "description": "4K video won't play"
+            },
+            {
+            "tag": "fail",
+            "description": "App shows ‘fail to play’"
+            },
+            {
+            "tag": "cantfind",
+            "description": "Video doesn't appear in the list"
+            },
+            {
+            "tag": "noresponse",
+            "description": "No response after clicking"
+            },
+            {
+            "tag": "nocover",
+            "description": "Video cover doesn't appear"
+            }]
+
+            },
+            {
+            "tag": "poorplay",
+            "subtitle": "Select the issue you are having",
+            "issues": [
+            {
+            "tag": "lag",
+            "description": "Video playback is lagging"
+            },
+            {
+            "tag": "nosound",
+            "description": "Video no sound"
+            },
+            {
+            "tag": "nopic",
+            "description": "Video screen did not display"
+            },
+            {
+            "tag": "dark",
+            "description": "Video is too dark"
+            },
+            {
+            "tag": "lowquality",
+            "description": "Video quality is low"
+            }
+            ]
+            },
+            { "tag": "file",
+            "subtitle": "Select the issue you are having",
+            "issues": [
+            {
+            "tag": "disappear",
+            "description": "Video disappeared from the list"
+            },
+            {
+            "tag": "SD",
+            "description": "Videos on the SD card are not showing"
+            },
+            {
+            "tag": "WA",
+            "description": "Videos from WhatsApp are not showing"
+            },
+            {
+            "tag": "download",
+            "description": "Downloaded files are not showing"
+            },
+            {
+            "tag": "nofile",
+            "description": "No video showing in the list"
+            }]
+            }
+            ],
+            "ad_issues": []
+            }</value>
+    </entry>
+    <entry>
+        <key>key_lv_feedback</key>
+        <value>{
+            "topArticlesSectionId": 33554032334355,
+            "allArticlesCategoryId": 33554032334355,
+            "abToggle": true
+            } </value>
+    </entry>
+    <entry>
+        <key>media_cover_vertical_hw_ratio</key>
+        <value>1.5</value>
+    </entry>
+    <entry>
+        <key>detect_drop_frame_count</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>detect_seek_timeout_ms</key>
+        <value>1000</value>
+    </entry>
+    <entry>
+        <key>switch_volume_gain</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>switch_scan_page_play_video</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>switch_close_notify</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>request_delete_in_io_limit</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>open_subtitles</key>
+        <value>{
+            "userAgent": "",
+            "apiKey": ""
+        }</value>
+    </entry>
+    <entry>
+        <key>key_continue_play_config</key>
+        <value>{
+            "play_progress_min": 0.1,
+            "play_progress_max": 0.8,
+            "duration": 900000,
+            "match_regex": "\\b(anal|cum|ass)\\b|sex|xvideo|xxx|pussy|fuck|horny|virgin|virgen|sexo|sex0|s3x0|s3x|safadinha|safada|safado|puta|سكس|نيك|سحاق|بزاز|سكسي|قضيب|طيز|كس|جنس|جنسي|ينيك|جنسية|لواط|ملابس داخلية|صدر|كلسون|تحرش|ملهى|شواذ|gay|خادش|خادشة|18+|🔞|porn|إباحي|xnx|xxn|xnn|xxx_|xvideo|se❌|hot girl|kiss|viagra|fazer amor|hacer amor|make love|한미모|inapropiado|s3x|erotic|penis|pênis|pure pink|only fans|tights|swim week|apasionado|taco de ojo|xxx|infiel|se entrega a|رقص شرقي|擦枪走火|aigirl|sex|pasión|lady fitness|tattoo|kiss|mujer hermosa|فضيحت|xhx|xx|مص|زب|brazzer|x video|سكي|شفايف|سکس|se×|ليلة الدخلة|سيكس|سكك|xnine|رقص ساخن|مصمصه|سخونة|yoga|massage|بتقلع هدومها|quantico|ضمة|خيانة|big bank|monta|فضيحة|proibido|يرضع|pantalon|mujer|bigbank|床戏|s*x|female|stretching|curvy|insert|breast|feeding|home workout|#judai|bio,wiki|fashion model|execute|نار|ردح ورقص|رقصة بنات|للمتزوجين|kiss|吻|挑逗|cannulat|mating|intimidad|مص|نسوان|sateo|conquista|اعـ ـدام|masturb|fantasias|lap dance|ejecut4|lesbico|lesbian|squirter|lingerie|underwear|stocking|umc runway|teufelsrad|lookbook|混浴|plus size|inapropriados|hot web series|lover|amante|amante|脱い|asmr|delivery|fitbarbie|يرضي رغباته|ノーブラ|compadre|amigos con derecho|curve model|best girls|stretch|pnetr4cion|kurmasana tortoise|flexibility|apasionada|vagina|hot seat|hot day|p4l4|tortur4d0s|desnuda|nake|عريان|blowjob|18 😈|boob|lick|suck|seduc|dick|cock|polla|الديك|nude|follo|folla|only_fans|onlyfans|only fans|cheat|adult|orgasm|threesome|hentai|condom|xmilfed|بوسة|whore|doggy|اباحيه|step mom|stepmom|stepmother|stepson|step son|stepbrother|step brother|stepdaughter|step daughter|step father|stepfather|step dad|milf|tushy|لحس|نيك|riding|mature|belly|تدليك|sensation/gi"
+        }</value>
+    </entry>
+    <entry>
+        <key>enable_clean_user_data</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>subtitle_report_switch</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>codec_playback_retry_config</key>
+        <value>2312CRNCCL,23129RN51X,23129RN51H,2312BPC51X,2312BPC51H</value>
+    </entry>
+    <entry>
+        <key>enable_fold_media</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>float_forbidden_models</key>
+        <value>moto e20,moto e13</value>
+    </entry>
+</defaultsMap>

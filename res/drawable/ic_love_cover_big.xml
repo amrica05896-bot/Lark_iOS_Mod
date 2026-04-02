@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="152.0dp" android:width="152.0dp" android:viewportWidth="152.0" android:viewportHeight="152.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/_ic_love_cover_big__0" android:pathData="M0,0h152v152h-152z" />
+    <path android:fillColor="#ffffff" android:pathData="M76,61.06C80.7,56.84 87.96,56.98 92.49,61.51C97.01,66.05 97.17,73.27 92.96,77.99L76,94.97L59.04,77.99C54.83,73.27 54.99,66.04 59.51,61.51C64.04,56.99 71.29,56.83 76,61.06Z" />
+    <group>
+        <clip-path android:pathData="M76,61.06C80.7,56.84 87.96,56.98 92.49,61.51C97.01,66.05 97.17,73.27 92.96,77.99L76,94.97L59.04,77.99C54.83,73.27 54.99,66.04 59.51,61.51C64.04,56.99 71.29,56.83 76,61.06Z" />
+        <path android:fillColor="@drawable/_ic_love_cover_big__1" android:pathData="M57,79L76,61L84,53L109,70L78,100L57,79Z" />
+    </group>
+</vector>

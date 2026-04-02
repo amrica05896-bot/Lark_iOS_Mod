@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen" />
+    <style name="Theme.LarkPlayer.Day.Base" parent="@style/Theme.Material3.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:isLightTheme">true</item>
+        <item name="bg_main">@color/day_bg_main</item>
+        <item name="bg_opacity_90">@color/day_bg_opacity_90</item>
+        <item name="bg_overlay">@color/day_bg_overlay</item>
+        <item name="bg_overlay_top">@color/day_bg_overlay_top</item>
+        <item name="black_opacity_20">@color/day_black_opacity_20</item>
+        <item name="black_opacity_50">@color/day_black_opacity_50</item>
+        <item name="black_opacity_70">@color/day_black_opacity_70</item>
+        <item name="black_solid">@color/day_black_solid</item>
+        <item name="brand_bg">@color/day_brand_bg</item>
+        <item name="brand_content">@color/day_brand_content</item>
+        <item name="brand_main">@color/day_brand_main</item>
+        <item name="colorAccent">@color/day_brand_main</item>
+        <item name="colorControlActivated">@color/day_brand_main</item>
+        <item name="colorControlHighlight">@color/transparency_black_quaternary1</item>
+        <item name="colorControlNormal">@color/day_content_main</item>
+        <item name="colorPrimary">@color/day_bg_main</item>
+        <item name="colorPrimaryDark">@color/day_bg_main</item>
+        <item name="content_main">@color/day_content_main</item>
+        <item name="content_opacity_08">@color/day_content_opacity_08</item>
+        <item name="content_soft">@color/day_content_soft</item>
+        <item name="content_weak">@color/day_content_weak</item>
+        <item name="lp_divider_color">@color/day_divider</item>
+        <item name="lp_play_btn_bg">@color/day_brand_main</item>
+        <item name="lp_ripple_color">@color/transparency_black_quaternary1</item>
+        <item name="lp_ripple_color_2">@color/transparency_black_quaternary2</item>
+        <item name="lp_ripple_color_main">@color/transparency_white_secondary</item>
+        <item name="pick_bg">@color/day_pick_bg</item>
+        <item name="pick_contract">@color/day_pick_contract</item>
+        <item name="pick_main">@color/day_pick_main</item>
+        <item name="positive_bg">@color/day_positive_bg</item>
+        <item name="positive_content">@color/day_positive_content</item>
+        <item name="positive_main">@color/day_positive_main</item>
+        <item name="warm_main">@color/day_warm_main</item>
+        <item name="warn_bg">@color/day_warn_bg</item>
+        <item name="warn_content">@color/day_warn_content</item>
+        <item name="white_opacity_08">@color/day_white_opacity_08</item>
+        <item name="white_opacity_20">@color/day_white_opacity_20</item>
+        <item name="white_opacity_50">@color/day_white_opacity_50</item>
+        <item name="white_opacity_80">@color/day_white_opacity_80</item>
+        <item name="white_solid">@color/day_white_solid</item>
+    </style>
+    <style name="Theme.LarkPlayer.Night.Base" parent="@style/Theme.Material3.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:isLightTheme">false</item>
+        <item name="bg_main">@color/night_bg_main</item>
+        <item name="bg_opacity_90">@color/night_bg_opacity_90</item>
+        <item name="bg_overlay">@color/night_bg_overlay</item>
+        <item name="bg_overlay_top">@color/night_bg_overlay_top</item>
+        <item name="black_opacity_20">@color/night_black_opacity_20</item>
+        <item name="black_opacity_50">@color/night_black_opacity_50</item>
+        <item name="black_opacity_70">@color/night_black_opacity_70</item>
+        <item name="black_solid">@color/night_black_solid</item>
+        <item name="brand_bg">@color/night_brand_bg</item>
+        <item name="brand_content">@color/night_brand_content</item>
+        <item name="brand_main">@color/night_brand_main</item>
+        <item name="colorAccent">@color/night_brand_main</item>
+        <item name="colorControlActivated">@color/night_brand_main</item>
+        <item name="colorControlHighlight">@color/transparency_white_tertiary</item>
+        <item name="colorControlNormal">@color/night_content_main</item>
+        <item name="colorPrimary">@color/night_bg_main</item>
+        <item name="colorPrimaryDark">@color/night_bg_main</item>
+        <item name="content_main">@color/night_content_main</item>
+        <item name="content_opacity_08">@color/night_content_opacity_08</item>
+        <item name="content_soft">@color/night_content_soft</item>
+        <item name="content_weak">@color/night_content_weak</item>
+        <item name="lp_divider_color">@color/night_divider</item>
+        <item name="lp_play_btn_bg">@color/night_content_main</item>
+        <item name="lp_ripple_color">@color/transparency_white_secondary</item>
+        <item name="lp_ripple_color_2">@color/transparency_white_tertiary_2</item>
+        <item name="lp_ripple_color_main">@color/transparency_black_quaternary1</item>
+        <item name="pick_bg">@color/night_pick_bg</item>
+        <item name="pick_contract">@color/night_pick_contract</item>
+        <item name="pick_main">@color/night_pick_main</item>
+        <item name="positive_bg">@color/night_positive_bg</item>
+        <item name="positive_content">@color/night_positive_content</item>
+        <item name="positive_main">@color/night_positive_main</item>
+        <item name="warm_main">@color/night_warm_main</item>
+        <item name="warn_bg">@color/night_warn_bg</item>
+        <item name="warn_content">@color/night_warn_content</item>
+        <item name="white_opacity_08">@color/night_white_opacity_08</item>
+        <item name="white_opacity_20">@color/night_white_opacity_20</item>
+        <item name="white_opacity_50">@color/night_white_opacity_50</item>
+        <item name="white_opacity_80">@color/night_white_opacity_80</item>
+        <item name="white_solid">@color/night_white_solid</item>
+    </style>
+</resources>

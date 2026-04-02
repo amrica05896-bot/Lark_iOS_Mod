@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.DebugScrollView android:id="@id/scroll_debug" android:background="@color/transparency_black_tertiary" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="@color/night_content_main" android:id="@id/tv_debug" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Caption_LP" />
+    </com.dywx.larkplayer.module.base.widget.DebugScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

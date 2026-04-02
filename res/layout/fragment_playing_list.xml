@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:need_delegate="true" app:rv_backgroundColor="?bg_overlay" app:rv_cornerRadius_TL="@dimen/spacing_medium" app:rv_cornerRadius_TR="@dimen/spacing_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.shape.RoundButton android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_drag" android:layout_width="36.0dp" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:rv_backgroundColor="?content_weak" app:rv_cornerRadius="2.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56.0dp" android:paddingStart="12.0dp" android:paddingEnd="16.0dp">
+        <com.dywx.larkplayer.module.base.widget.LPLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mode_container" android:paddingLeft="4.0dp" android:paddingTop="4.0dp" android:paddingRight="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:need_init="true" app:ripple_mask="true" app:use_ripple="true">
+            <ImageView android:id="@id/action_mode" android:layout_width="24.0dp" android:layout_height="24.0dp" app:srcCompat="@drawable/ic_shuffle_normal" />
+            <TextView android:textAppearance="@style/Subtitle2" android:textColor="?brand_main" android:id="@id/mode_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" />
+        </com.dywx.larkplayer.module.base.widget.LPLinearLayout>
+        <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="?content_soft" android:gravity="center" android:id="@id/tv_separator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="·" />
+        <TextView android:textAppearance="@style/Overline" android:textColor="?content_soft" android:id="@id/count_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+        <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.dywx.larkplayer.module.base.widget.LPImageView android:id="@id/action_delete" android:layout_width="24.0dp" android:layout_height="24.0dp" app:need_init="true" app:ripple_radius="16.0dp" app:srcCompat="@drawable/ic_list_delete" app:use_ripple="true" app:vector_fill_color="?content_soft" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/playing_list" android:layout_width="match_parent" android:layout_height="420.0dp" />
+</com.dywx.larkplayer.module.base.widget.LPLinearLayout>

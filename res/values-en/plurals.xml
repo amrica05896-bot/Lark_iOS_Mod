@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="album_count">
+        <item quantity="one">%s album</item>
+        <item quantity="other">%s albums</item>
+    </plurals>
+    <plurals name="artist_count">
+        <item quantity="one">%s artist</item>
+        <item quantity="other">%s artists</item>
+    </plurals>
+    <plurals name="authorize_uri_scan_songs_tips">
+        <item quantity="one">Found 1 song for you</item>
+        <item quantity="other">Found %d songs for you</item>
+    </plurals>
+    <plurals name="authorize_uri_scan_videos_tips">
+        <item quantity="one">Found 1 video for you</item>
+        <item quantity="other">Found %d videos for you</item>
+    </plurals>
+    <plurals name="daily_playlist_detail_songs">
+        <item quantity="one">%d Song</item>
+        <item quantity="other">%d Songs</item>
+    </plurals>
+    <plurals name="day_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="delete_file_dialog_content">
+        <item quantity="one">Once deleted, the file cannot be recovered.</item>
+        <item quantity="other">Once deleted, the files cannot be recovered.</item>
+    </plurals>
+    <plurals name="delete_file_dialog_title">
+        <item quantity="one">Delete the file?</item>
+        <item quantity="other">Delete %d files?</item>
+    </plurals>
+    <plurals name="delete_playlist_hint">
+        <item quantity="one">Are you sure you want to delete this playlist?</item>
+        <item quantity="other">Are you sure you want to delete these playlists?</item>
+    </plurals>
+    <plurals name="delete_song_checkbox">
+        <item quantity="one">Also delete song from device</item>
+        <item quantity="other">Also delete songs from device?</item>
+    </plurals>
+    <plurals name="delete_song_dialog_content">
+        <item quantity="one">Once deleted, the song cannot be recovered.</item>
+        <item quantity="other">Once deleted, the songs cannot be recovered.</item>
+    </plurals>
+    <plurals name="delete_song_dialog_title">
+        <item quantity="one">Delete the song?</item>
+        <item quantity="other">Delete %d songs?</item>
+    </plurals>
+    <plurals name="delete_song_from_device">
+        <item quantity="one">Are you sure you want to delete this song from device?</item>
+        <item quantity="other">Are you sure you want to delete these songs from device?</item>
+    </plurals>
+    <plurals name="delete_song_in_album">
+        <item quantity="one">Are you sure you want to delete this album and %s it contains?</item>
+        <item quantity="other">Are you sure you want to delete these album and %s it contains?</item>
+    </plurals>
+    <plurals name="delete_song_in_artist">
+        <item quantity="one">Are you sure you want to delete this artist and %s it contains?</item>
+        <item quantity="other">Are you sure you want to delete these artists and %s it contains?</item>
+    </plurals>
+    <plurals name="delete_tip_all_fail">
+        <item quantity="one">Failed, Lark Video doesn‘t have permission to delete this video</item>
+        <item quantity="other">Failed, Lark Video doesn’t have permission to delete these videos</item>
+    </plurals>
+    <plurals name="delete_tip_part_fail">
+        <item quantity="one">Delete completed: %1$d video deleted, %2$d failed</item>
+        <item quantity="other">Delete completed: %1$d videos deleted, %2$d failed</item>
+    </plurals>
+    <plurals name="delete_video_checkbox">
+        <item quantity="one">Also delete video from device</item>
+        <item quantity="other">Also delete videos from device</item>
+    </plurals>
+    <plurals name="delete_video_checkbox_new">
+        <item quantity="one">Also delete video</item>
+        <item quantity="other">Also delete videos</item>
+    </plurals>
+    <plurals name="delete_video_dialog_content">
+        <item quantity="one">Once deleted, the video cannot be recovered.</item>
+        <item quantity="other">Once deleted, the videos cannot be recovered.</item>
+    </plurals>
+    <plurals name="delete_video_dialog_title">
+        <item quantity="one">Delete the video?</item>
+        <item quantity="other">Delete %d videos?</item>
+    </plurals>
+    <plurals name="delete_video_playlist_hint">
+        <item quantity="one">Are you sure to delete the playlist？Your videos will not be deleted</item>
+        <item quantity="other">Are you sure to delete %d playlists？Your videos will not be deleted</item>
+    </plurals>
+    <plurals name="delete_video_playlist_tip">
+        <item quantity="one">Are you sure you want to delete the playlist？</item>
+        <item quantity="other">Are you sure you want to delete the playlists？</item>
+    </plurals>
+    <plurals name="file_move_to_recently_deleted_snack">
+        <item quantity="one">%1$d file has been moved to “Recently deleted”</item>
+        <item quantity="other">%1$d files have been moved to “Recently deleted”</item>
+    </plurals>
+    <plurals name="file_not_exist_sdcard_unmount">
+        <item quantity="one">Something is wrong with the SD card. Refresh or remove this file from the list.</item>
+        <item quantity="other">Something is wrong with the SD card, refresh or remove all of these %d files from the list.</item>
+    </plurals>
+    <plurals name="files_quantity">
+        <item quantity="one">1 file</item>
+        <item quantity="other">%d files</item>
+    </plurals>
+    <plurals name="flies_quantity">
+        <item quantity="one">1 file</item>
+        <item quantity="other">%d files</item>
+    </plurals>
+    <plurals name="hour_ago">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="lark_player_songs_count">
+        <item quantity="one">Lark Video · 1 song</item>
+        <item quantity="other">Lark Video · %d songs</item>
+    </plurals>
+    <plurals name="less_than_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="library_videos_quantity">
+        <item quantity="one">%s video</item>
+        <item quantity="other">%s videos</item>
+    </plurals>
+    <plurals name="locking_videos">
+        <item quantity="one">Locking %d video</item>
+        <item quantity="other">Locking %d videos</item>
+    </plurals>
+    <plurals name="minute_ago">
+        <item quantity="one">%d min ago</item>
+        <item quantity="other">%d mins ago</item>
+    </plurals>
+    <plurals name="month_ago">
+        <item quantity="one">%d month ago</item>
+        <item quantity="other">%d months ago</item>
+    </plurals>
+    <plurals name="multiple_delete_album_file_num">
+        <item quantity="one">%d file</item>
+        <item quantity="other">%d files</item>
+    </plurals>
+    <plurals name="multiple_delete_from_device">
+        <item quantity="one">Permanently delete %d video from your device?</item>
+        <item quantity="other">Permanently delete %d videos from your device?</item>
+    </plurals>
+    <plurals name="new_songs_title">
+        <item quantity="one">New song added, touch to play now.</item>
+        <item quantity="other">%1$d new songs added, touch to play now.</item>
+    </plurals>
+    <plurals name="new_songs_title_new">
+        <item quantity="one">New song added, tap to play now.</item>
+        <item quantity="other">%1$d new songs added, tap to play now.</item>
+    </plurals>
+    <plurals name="new_videos_found">
+        <item quantity="one">1 new video found!</item>
+        <item quantity="other">%1$d new videos found!</item>
+    </plurals>
+    <plurals name="new_videos_title">
+        <item quantity="one">New video is added, touch to play now.</item>
+        <item quantity="other">%1$d new videos are added, touch to play now.</item>
+    </plurals>
+    <plurals name="new_videos_title_new">
+        <item quantity="one">New video is added, tap to play now.</item>
+        <item quantity="other">%1$d new videos are added, tap to play now.</item>
+    </plurals>
+    <plurals name="play_count">
+        <item quantity="one">%s time</item>
+        <item quantity="other">%s times</item>
+    </plurals>
+    <plurals name="playlist_delete_message">
+        <item quantity="one">1 video will move to “Recently deleted” and be deleted in 30 days.</item>
+        <item quantity="other">%1$d videos will move to “Recently deleted” and be deleted in 30 days.</item>
+    </plurals>
+    <plurals name="remove_song_in_playlist">
+        <item quantity="one">Are you sure you want to remove this song from the playlist?</item>
+        <item quantity="other">Are you sure you want to remove these songs from the playlist?</item>
+    </plurals>
+    <plurals name="remove_video_from_playlist_hint">
+        <item quantity="one">Are you sure you want to remove this video from the playlist?</item>
+        <item quantity="other">Are you sure you want to remove %d videos from the playlist?</item>
+    </plurals>
+    <plurals name="remove_video_from_playlist_tip">
+        <item quantity="one">Are you sure you want to remove this video from the playlist？</item>
+        <item quantity="other">Are you sure you want to remove these videos from the playlist？</item>
+    </plurals>
+    <plurals name="scan_songs_found">
+        <item quantity="one">%d songs found!</item>
+        <item quantity="other">%d songs found!</item>
+    </plurals>
+    <plurals name="scan_songs_found2">
+        <item quantity="one">"%d Song
+ Found!"</item>
+        <item quantity="other">"%d Songs
+ Found!"</item>
+    </plurals>
+    <plurals name="songs_count">
+        <item quantity="one">%s song</item>
+        <item quantity="other">%s songs</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="one">1 song</item>
+        <item quantity="other">%d songs</item>
+    </plurals>
+    <plurals name="task_reward">
+        <item quantity="one">+ 1 coin</item>
+        <item quantity="other">+ %d coins</item>
+    </plurals>
+    <plurals name="trash_file_dialog_content">
+        <item quantity="one">1 file will be moved to Recently deleted and deleted after 30 days.</item>
+        <item quantity="other">%d files will be moved to Recently deleted and deleted after 30 days.</item>
+    </plurals>
+    <plurals name="trash_song_dialog_content">
+        <item quantity="one">1 song will be moved to Recently deleted and deleted after 30 days.</item>
+        <item quantity="other">%d songs will be moved to Recently deleted and deleted after 30 days.</item>
+    </plurals>
+    <plurals name="trash_video_dialog_content">
+        <item quantity="one">1 video will be moved to Recently deleted and deleted after 30 days.</item>
+        <item quantity="other">%d videos will be moved to Recently deleted and deleted after 30 days.</item>
+    </plurals>
+    <plurals name="unlocking_videos">
+        <item quantity="one">Unlocking %d video</item>
+        <item quantity="other">Unlocking %d videos</item>
+    </plurals>
+    <plurals name="video_locked_tip">
+        <item quantity="one">%d video is locked</item>
+        <item quantity="other">%d videos are locked</item>
+    </plurals>
+    <plurals name="video_unlock_tip">
+        <item quantity="one">%d video is unlocked</item>
+        <item quantity="other">%d videos are unlocked</item>
+    </plurals>
+    <plurals name="videos_quantity">
+        <item quantity="one">1 video</item>
+        <item quantity="other">%d videos</item>
+    </plurals>
+    <plurals name="view_hidden_folders">
+        <item quantity="one">View 1 hidden folder</item>
+        <item quantity="other">View %d hidden folders</item>
+    </plurals>
+    <plurals name="x_song_selected">
+        <item quantity="one">%d Song Selected</item>
+        <item quantity="other">%d Songs Selected</item>
+    </plurals>
+</resources>

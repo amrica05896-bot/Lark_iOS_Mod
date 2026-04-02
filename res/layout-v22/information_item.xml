@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPLinearLayout android:orientation="vertical" android:tag="layout/information_item_0" android:paddingLeft="@dimen/spacing_medium" android:paddingRight="@dimen/spacing_medium" android:paddingBottom="@dimen/spacing_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textSize="16.0sp" android:textColor="?content_weak" android:gravity="start|center" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="46.0dp" android:singleLine="true" style="@style/Title" />
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textSize="14.0sp" android:textColor="?content_main" android:gravity="start|center" android:id="@id/tv_content" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8.0dp" style="@style/Body" />
+</com.dywx.larkplayer.module.base.widget.LPLinearLayout>

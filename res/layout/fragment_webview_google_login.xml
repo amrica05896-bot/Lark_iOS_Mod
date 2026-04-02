@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_webview_google_login_0" android:background="@color/night_bg_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:gravity="center_vertical" android:id="@id/tool_bar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_left" app:navigationIconTint="@color/night_content_main" app:title="@string/forgot_password" app:titleTextColor="@color/night_content_main" />
+    <FrameLayout android:id="@id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tool_bar" />
+    <ProgressBar android:id="@id/progress" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="3.0dp" android:layout_below="@id/tool_bar" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <include android:id="@id/list_no_network_tips_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/no_network_tips_view" />
+</RelativeLayout>

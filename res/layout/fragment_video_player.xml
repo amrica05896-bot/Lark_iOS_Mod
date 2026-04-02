@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/video_player_item" />
+    <include layout="@layout/layout_video_player_gesture" />
+    <ViewStub android:id="@id/vs_play_guide" android:layout="@layout/video_player_guide" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

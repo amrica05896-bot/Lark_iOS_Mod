@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPSwipeRefreshLayout android:id="@id/swipeLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dywx.larkplayer.module.base.widget.listview.indexable.IndexableRecyclerView android:id="@android:id/list" android:scrollbars="none" android:fadingEdge="none" android:nextFocusLeft="@android:id/list" android:nextFocusRight="@android:id/list" android:nextFocusUp="@id/ml_menu_search" android:nextFocusDown="@android:id/list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:stretchMode="none" android:fastScrollEnabled="true" />
+    </com.dywx.larkplayer.module.base.widget.LPSwipeRefreshLayout>
+    <com.dywx.larkplayer.module.base.widget.scrollbar.RecyclerViewScrollBar android:layout_gravity="end" android:id="@id/scroll_bar" android:layout_width="wrap_content" android:layout_height="match_parent" app:has_tips="true" app:recyclerView_id="@android:id/list" app:scrollbar_position="videos" />
+    <com.dywx.larkplayer.module.base.widget.LPProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" android:indeterminate="true" app:circleProgress="true" />
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="?content_weak" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dp" android:text="@string/loading" style="@style/Body" />
+    <ViewStub android:id="@id/no_storage_permission_stub" android:layout="@layout/no_storage_permission_stub" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

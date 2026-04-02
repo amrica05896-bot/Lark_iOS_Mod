@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/content" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@android:id/list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </FrameLayout>
+    <WebView android:id="@id/web_view_search" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.dywx.larkplayer.module.base.widget.LPProgressBar android:layout_gravity="center" android:id="@id/first_loading" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:indeterminate="true" app:circleProgress="true" />
+    <ViewStub android:id="@id/list_no_network_tips_view" android:inflatedId="@id/list_no_network_tips_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/no_data_tips_view" android:inflatedId="@id/no_data_tips_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>media_info_match_config</key>
+        <value>{|type|: |all|, |fetch_item_every_time|: 30, |interval_day|: 3}</value>
+    </entry>
+</defaultsMap>

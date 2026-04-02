@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/head_root" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.dywx.larkplayer.gui.behavior.FixRecyclerViewBottomBehavior">
+        <include layout="@layout/dot_tab_layout" />
+        <com.dywx.larkplayer.module.base.widget.viewpager.CommonViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/sliding_tabs" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.dywx.larkplayer.module.base.widget.MainHeadView android:id="@id/head" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_anchor="@id/head_root" app:layout_anchorGravity="center" app:layout_scrollFlags="scroll|enterAlways" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

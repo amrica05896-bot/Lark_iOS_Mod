@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:paddingTop="16.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dywx.larkplayer.module.base.widget.FixedAspectRatioFrameLayout android:id="@id/cover_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" />
+    </com.dywx.larkplayer.module.base.widget.FixedAspectRatioFrameLayout>
+</FrameLayout>

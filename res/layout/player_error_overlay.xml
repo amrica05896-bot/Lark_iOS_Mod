@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/first_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="#3f51b5" android:id="@id/load_retry" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:paddingStart="8.0dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPLinearLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="16.0dp" app:need_delegate="true" app:rv_backgroundColor="?bg_overlay" app:rv_cornerRadius_TL="@dimen/spacing_medium" app:rv_cornerRadius_TR="@dimen/spacing_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.shape.RoundButton android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_drag" android:layout_width="36.0dp" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" app:rv_backgroundColor="?content_weak" app:rv_cornerRadius="2.0dp" />
+    <TextView android:textAppearance="@style/Body2" android:textColor="?content_soft" android:gravity="center_vertical" android:id="@id/tv_artists_des" android:paddingTop="18.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/multiple_artists_des" android:paddingVertical="18.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_artists" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</com.dywx.larkplayer.module.base.widget.LPLinearLayout>

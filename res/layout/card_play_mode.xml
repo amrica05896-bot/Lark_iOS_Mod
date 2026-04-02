@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.PlayModeView android:paddingLeft="@dimen/spacing_medium" android:paddingTop="@dimen/spacing_normal" android:paddingRight="@dimen/spacing_medium" android:paddingBottom="@dimen/spacing_normal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPButton android:id="@id/play" android:layout_width="0.0dp" android:text="@string/play" app:icon="@drawable/ic_play" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/shuffle" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/BtnBig" />
+    <com.dywx.larkplayer.module.base.widget.LPButton android:id="@id/shuffle" android:layout_width="0.0dp" android:text="@string/play_mode_shuffle" android:layout_marginStart="@dimen/spacing_small" app:icon="@drawable/ic_shuffer" app:layout_constraintBottom_toBottomOf="@id/play" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/play" app:layout_constraintTop_toTopOf="@id/play" style="@style/BtnBig" />
+</com.dywx.larkplayer.module.base.widget.PlayModeView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/spacing_medium" android:paddingEnd="@dimen/spacing_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:id="@id/image" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/spacing_normal" app:srcCompat="@drawable/ic_question" app:vector_fill_color="?content_soft" />
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="?content_main" android:ellipsize="end" android:layout_gravity="start|center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/Body_Medium_LP" />
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:layout_gravity="end|center" android:id="@id/arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.0" app:srcCompat="@drawable/ic_down" app:vector_fill_color="?content_soft" />
+</LinearLayout>

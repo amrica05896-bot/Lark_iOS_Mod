@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPLinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_loading" android:paddingLeft="@dimen/spacing_normal" android:paddingTop="32.0dp" android:paddingRight="@dimen/spacing_normal" android:paddingBottom="32.0dp" android:layout_width="150.0dp" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_normal" android:paddingVertical="32.0dp" app:need_delegate="true" app:rv_backgroundColor="@color/night_bg_overlay" app:rv_cornerRadius="@dimen/spacing_small">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginBottom="16.0dp" android:tint="@color/night_positive_main" android:indeterminate="true" android:indeterminateTint="@color/night_positive_main" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/night_content_main" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </com.dywx.larkplayer.module.base.widget.LPLinearLayout>
+</FrameLayout>

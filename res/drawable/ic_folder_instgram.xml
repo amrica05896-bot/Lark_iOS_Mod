@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="25.0dp" android:width="24.0dp" android:viewportWidth="24.0" android:viewportHeight="25.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/_ic_folder_instgram__0" android:pathData="M12,22.011C17.523,22.011 22,17.534 22,12.011C22,6.488 17.523,2.011 12,2.011C6.477,2.011 2,6.488 2,12.011C2,17.534 6.477,22.011 12,22.011Z" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M8.923,6.357L15.077,6.357A2.577,2.577 0,0 1,17.654 8.934L17.654,15.088A2.577,2.577 0,0 1,15.077 17.665L8.923,17.665A2.577,2.577 0,0 1,6.346 15.088L6.346,8.934A2.577,2.577 0,0 1,8.923 6.357z" android:strokeColor="#ffffff" android:strokeWidth="1.0" />
+    <path android:fillColor="#ffffff" android:pathData="M15.219,9.475C15.644,9.475 15.989,9.131 15.989,8.706C15.989,8.281 15.644,7.937 15.219,7.937C14.795,7.937 14.45,8.281 14.45,8.706C14.45,9.131 14.795,9.475 15.219,9.475Z" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M14.577,12.012C14.577,13.435 13.423,14.588 12,14.588C10.577,14.588 9.423,13.435 9.423,12.012C9.423,10.588 10.577,9.435 12,9.435C13.423,9.435 14.577,10.588 14.577,12.012Z" android:strokeColor="#ffffff" android:strokeWidth="1.0" />
+</vector>

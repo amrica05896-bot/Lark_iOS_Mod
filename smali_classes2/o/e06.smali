@@ -1,0 +1,71 @@
+.class public abstract Lo/e06;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/gson/Gson;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/google/gson/Gson;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static a(Landroid/content/Context;)I
+    .locals 1
+
+    .line 1
+    const-string v0, "window"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Landroid/view/WindowManager;
+
+    .line 8
+    .line 9
+    if-nez p0, :cond_0
+
+    .line 10
+    .line 11
+    const/4 p0, 0x0
+
+    .line 12
+    return p0
+
+    .line 13
+    :cond_0
+    invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    invoke-virtual {p0}, Landroid/view/Display;->getWidth()I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    return p0
+.end method

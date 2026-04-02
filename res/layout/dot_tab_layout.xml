@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPTabLayout android:id="@id/sliding_tabs" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" app:lp_tabIndicatorColor="?brand_main" app:lp_tabRippleColor="?lp_ripple_color_2" app:lp_tabSelectedTextColor="?content_main" app:lp_tabTextColor="?content_soft" app:tabIndicatorColor="?brand_main" app:tabIndicatorFullWidth="false" app:tabMinWidth="0.0dp" app:tabMode="scrollable" app:tabPaddingEnd="12.0dp" app:tabPaddingStart="12.0dp" app:tabSelectedTextColor="?content_main" app:tabTextAppearance="@style/Body2" app:tabTextColor="?content_soft" />
+</merge>

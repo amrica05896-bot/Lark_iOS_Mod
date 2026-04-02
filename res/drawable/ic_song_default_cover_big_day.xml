@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="156.0dp" android:width="156.0dp" android:viewportWidth="156.0" android:viewportHeight="156.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/day_bg_overlay" android:pathData="M0,0h156v156h-156z" android:fillAlpha="0.5" />
+    <path android:fillColor="@color/day_content_weak" android:pathData="M99.78,43.67L69.85,52.82C66.23,53.86 63.29,57.64 63.29,61.27V92.4C63.29,92.4 63.29,92.83 63.29,92.84C63.29,92.84 61.12,91.37 56.29,92.06C49.19,93.07 43.44,98.51 43.44,104.22C43.44,109.93 49.19,113.43 56.29,112.43C63.39,111.42 68.59,106.14 68.59,100.43C68.59,100.43 68.59,76.01 68.59,73.48C68.59,70.94 71.63,69.86 71.63,69.86L98.09,61.56C98.09,61.56 101.02,60.58 101.02,63.29C101.02,66 101.02,84.92 101.02,84.92C101.02,84.92 101.02,84.93 101.02,84.94C101.02,84.94 98.33,83.39 93.5,83.98C86.4,84.84 80.65,90.17 80.65,95.88C80.65,101.59 86.4,105.21 93.5,104.34C100.6,103.48 106.35,98.15 106.35,92.44V48.36C106.35,44.73 103.4,42.63 99.78,43.67Z" android:fillAlpha="0.5" />
+</vector>

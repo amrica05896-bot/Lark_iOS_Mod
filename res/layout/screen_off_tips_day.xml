@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/corner_rect_radius_8dp_day" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_template" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@android:id/icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginStart="0.0dp" android:layout_marginEnd="16.0dp" />
+            <TextView android:textAppearance="@style/Title3" android:textColor="@color/day_content_main" android:id="@id/alertTitle" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:layout_weight="1.0">
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="@style/Body2" android:textColor="@color/day_content_soft" android:id="@android:id/message" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <com.dywx.larkplayer.module.base.widget.ScaleImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:src="@drawable/ic_music_player" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/buttonPanel" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="16.0dp">
+        <Button android:textAppearance="@style/Button" android:textColor="@color/day_content_soft" android:id="@android:id/button2" android:background="@null" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textAppearance="@style/Button" android:textColor="@color/day_content_soft" android:id="@android:id/button3" android:background="@null" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.dywx.larkplayer.module.base.widget.shape.RoundButton android:textAppearance="@style/Button" android:textColor="@color/night_content_main" android:id="@android:id/button1" android:background="@null" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rv_backgroundColor="@color/day_brand_main" app:rv_cornerRadius="4.0dp" />
+    </LinearLayout>
+</LinearLayout>

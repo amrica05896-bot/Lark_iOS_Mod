@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPConstraintLayout android:background="?bg_main" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.MultipleSelectHeadView android:id="@id/head_view" android:layout_width="match_parent" android:layout_height="96.0dp" />
+    <com.dywx.larkplayer.module.base.widget.ReporterRecyclerView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="96.0dp" app:layout_constraintBottom_toTopOf="@id/select_bottom" />
+    <com.dywx.larkplayer.module.base.widget.scrollbar.RecyclerViewScrollBar android:id="@id/scroll_bar" android:layout_width="wrap_content" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/select_bottom" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/head_view" app:recyclerView_id="@android:id/list" app:scrollbar_position="playlist_detail" />
+    <FrameLayout android:id="@id/empty_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/main_toolbar" />
+    <com.dywx.larkplayer.module.base.widget.MultipleSelectBottomView android:id="@id/select_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginBottom="-80.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</com.dywx.larkplayer.module.base.widget.LPConstraintLayout>

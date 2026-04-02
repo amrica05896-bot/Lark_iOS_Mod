@@ -1,0 +1,34 @@
+.class public abstract Lo/xh1;
+.super Landroidx/databinding/a;
+.source "SourceFile"
+
+
+# static fields
+.field public static final synthetic Q:I
+
+
+# instance fields
+.field public final O:Lcom/dywx/larkplayer/module/base/widget/LPTextView;
+
+.field public P:Lo/ru4;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Object;Landroid/view/View;Lcom/dywx/larkplayer/module/base/widget/LPTextView;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-direct {p0, v0, p2, p1}, Landroidx/databinding/a;-><init>(ILandroid/view/View;Ljava/lang/Object;)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput-object p3, p0, Lo/xh1;->O:Lcom/dywx/larkplayer/module/base/widget/LPTextView;
+
+    .line 6
+    .line 7
+    return-void
+.end method

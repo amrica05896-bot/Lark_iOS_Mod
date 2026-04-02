@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPFrameLayout android:background="?bg_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPSwipeRefreshLayout android:id="@id/refresh_layout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dywx.larkplayer.module.base.widget.ReporterRecyclerView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.dywx.larkplayer.module.base.widget.LPSwipeRefreshLayout>
+    <com.dywx.larkplayer.module.base.widget.LPProgressBar android:layout_gravity="center" android:id="@id/loading" android:layout_width="30.0dp" android:layout_height="30.0dp" android:indeterminate="true" app:circleProgress="true" />
+    <FrameLayout android:id="@id/empty_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/no_storage_permission_stub" android:layout="@layout/no_storage_permission_stub" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dywx.larkplayer.module.base.widget.LPFrameLayout>

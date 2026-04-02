@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Region:" />
+            <EditText android:id="@id/dragon_region" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="input the region code" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Language:" />
+            <EditText android:id="@id/dragon_language" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="input the language code" />
+        </LinearLayout>
+        <Button android:id="@id/dragon_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/random_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RandomId [0, 100):" />
+            <EditText android:id="@id/random_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="input random id " android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/edit_coins_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+            <EditText android:id="@id/edit_coins" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="修改金币" android:inputType="number" />
+        </LinearLayout>
+        <EditText android:id="@id/dragon_api" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="input the api host" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="https://api.larkplayerapp.com" android:onClick="changeApiHost" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="http://staging.api.larkplayerapp.com" android:onClick="changeApiHost" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="http://100.64.20.106:8080" android:onClick="changeApiHost" />
+        <Button android:id="@id/dragon_sure_api" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定修改 api" />
+        <Button android:id="@id/btn_changelog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看changeLog" />
+        <Button android:id="@id/mediation_test_suit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启 Mediation Test Suit" />
+        <ToggleButton android:id="@id/debug_logger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="关闭 Debug Logger" android:textOff="开启 Debug Logger" />
+        <ToggleButton android:id="@id/debug_gandalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="关闭 Gandalf Debug" android:textOff="开启 Gandalf DEBUG" />
+        <ToggleButton android:id="@id/debug_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="默认视频背景配置" android:textOff="开启视频背景" />
+        <ToggleButton android:id="@id/feedback_staging" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="FeedBack关闭强制性使用Staging" android:textOff="FeedBack强制使用Staging" />
+        <ToggleButton android:id="@id/ad_dt_use_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="广告：直客检查 IP 再填充" android:textOff="广告：直客广告不检查 IP" />
+        <ToggleButton android:id="@id/debuginfo_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="关闭BE调试信息" android:textOff="开启BE调试信息" />
+        <ToggleButton android:id="@id/debug_test_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="关闭测试模式" android:textOff="开启测试模式" />
+        <ToggleButton android:id="@id/audio_debug_mode_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="关闭AudioPlayer测试模式" android:textOff="开启AudioPlayer测试模式" />
+        <Button android:id="@id/share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图文分享测试" />
+        <Button android:id="@id/delete_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除用户数据测试" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/et_volume_height_scale" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="输入音量调节高度比例 0-200" android:layout_weight="1.0" android:inputType="numberDecimal" />
+            <Button android:id="@id/volume_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+        </LinearLayout>
+        <TextView android:id="@id/push_test" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PUSH test" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_push" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="4.0dp">
+            <Button android:id="@id/push_continue" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="续播" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+            <Button android:id="@id/push_playlist" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Playlist" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+            <Button android:id="@id/push_unwatch" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Shorts" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+            <Button android:id="@id/push_mv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="MV" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Firebase config 操作" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_reset_firebase_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" />
+            <Button android:id="@id/btn_fetch_firebase_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fetch" />
+            <Button android:id="@id/btn_activate_firebase_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Activate" />
+        </LinearLayout>
+        <Button android:id="@id/btn_check_sensor_sample_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看 sensor_sample_config" />
+        <TextView android:textSize="12.0sp" android:textColor="#333333" android:id="@id/tv_sensor_sample_config_result" android:background="#f0f0f0" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+        <TextView android:id="@id/app_common_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="copyAppCommonInfo" />
+        <Switch android:id="@id/switch_feedback_host" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换为 snaptube 反馈请求" />
+        <Switch android:id="@id/switch_show_audio_playlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="显示音频 Playlist" />
+        <EditText android:id="@id/et_preload_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="输入预加载zip包URL" />
+        <EditText android:id="@id/et_intent_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="输入小游戏URL" />
+        <Button android:id="@id/btn_test_open_h5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="H5小游戏" />
+        <ToggleButton android:id="@id/open_switch_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="关闭切换播放器按钮" android:textOff="展示切换播放器按钮" />
+        <ToggleButton android:id="@id/open_android_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="关闭系统播放器" android:textOff="使用系统播放器" />
+        <Button android:id="@id/flush_logan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="logan flush" />
+        <Button android:id="@id/report_logan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="logan report" />
+        <ToggleButton android:id="@id/open_sdcard_exception" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="关闭 sdcard 异常模拟" android:textOff="开启 sdcard 异常模拟" />
+    </LinearLayout>
+</ScrollView>

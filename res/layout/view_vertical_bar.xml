@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="64.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:id="@id/iv_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginBottom="4.0dp" />
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textSize="14.0sp" android:textColor="@color/day_white_solid" android:gravity="center" android:id="@id/tv_value" android:layout_width="64.0dp" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" style="@style/Body" />
+    <com.dywx.larkplayer.module.base.widget.VerticalSeekBar android:id="@id/v_seekbar" android:layout_width="16.0dp" android:layout_height="176.0dp" app:vsb_bar_background_color="@color/day_white_opacity_50" app:vsb_bar_corner_radius="14.0dp" app:vsb_bar_progress_color="@color/day_white_solid" app:vsb_show_thumb="true" app:vsb_thumb_padding="4.0dp" />
+</LinearLayout>

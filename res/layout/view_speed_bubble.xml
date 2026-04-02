@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPFrameLayout android:layout_width="45.0dp" android:layout_height="36.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPButton android:textSize="14.0sp" android:textColor="?bg_main" android:gravity="center" android:id="@id/btn_speed" android:layout_width="45.0dp" android:layout_height="36.0dp" android:text="@string/speed_0_5" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" app:buttonState="main" style="@style/BtnBig" />
+</com.dywx.larkplayer.module.base.widget.LPFrameLayout>

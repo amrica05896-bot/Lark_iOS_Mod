@@ -1,0 +1,19 @@
+name: Clean Build Lark APK
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Build APK with Apktool 3.0.1
+        run: |
+          wget https://github.com/iBotPeaches/Apktool/releases/download/v3.0.1/apktool_3.0.1.jar -O apktool.jar
+          java -jar apktool.jar b . -o Lark_iOS_18_Final_Unsigned.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Lark_iOS_18_APK
+          path: Lark_iOS_18_Final_Unsigned.apk

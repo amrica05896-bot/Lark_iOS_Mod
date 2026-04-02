@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="album_count">
+        <item quantity="zero">%s ألبوم</item>
+        <item quantity="one">%s ألبوم</item>
+        <item quantity="two">%s ألبومان</item>
+        <item quantity="few">%s ألبومات</item>
+        <item quantity="many">%s ألبوم</item>
+        <item quantity="other">%s ألبوم</item>
+    </plurals>
+    <plurals name="artist_count">
+        <item quantity="zero">%s فنان</item>
+        <item quantity="one">%s فنان</item>
+        <item quantity="two">%s فنانان</item>
+        <item quantity="few">%s فنانين</item>
+        <item quantity="many">%s فنان</item>
+        <item quantity="other">%s فنان</item>
+    </plurals>
+    <plurals name="authorize_uri_scan_songs_tips">
+        <item quantity="zero">تم العثور على %d أغنية من أجلك</item>
+        <item quantity="one">تم العثور على أغنية واحدة من أجلك</item>
+        <item quantity="two">تم العثور على أغنيتين من أجلك</item>
+        <item quantity="few">تم العثور على %d أغاني من أجلك</item>
+        <item quantity="many">تم العثور على %d أغنية من أجلك</item>
+        <item quantity="other">تم العثور على %d أغنية من أجلك</item>
+    </plurals>
+    <plurals name="authorize_uri_scan_videos_tips">
+        <item quantity="zero">"تم العثور على %d فيديو "</item>
+        <item quantity="one">تم العثور على فيديو واحد</item>
+        <item quantity="two">تم العثور على فيديوهين اثنين</item>
+        <item quantity="few">تم العثور على %d فيديوهات</item>
+        <item quantity="many">"تم العثور على %d فيديو "</item>
+        <item quantity="other">"تم العثور على %d فيديو "</item>
+    </plurals>
+    <plurals name="daily_playlist_detail_songs">
+        <item quantity="zero">%d أغنية</item>
+        <item quantity="one">أغنية واحدة</item>
+        <item quantity="two">أغنيتان</item>
+        <item quantity="few">%d أغانٍ</item>
+        <item quantity="many">%d أغنية</item>
+        <item quantity="other">%d أغنية</item>
+    </plurals>
+    <plurals name="day_ago">
+        <item quantity="zero">منذ %d يوم</item>
+        <item quantity="one">منذ %d يوم</item>
+        <item quantity="two">منذ %d يوم</item>
+        <item quantity="few">منذ %d أيام</item>
+        <item quantity="many">منذ %d يوم</item>
+        <item quantity="other">منذ %d يوم</item>
+    </plurals>
+    <plurals name="delete_file_dialog_content">
+        <item quantity="zero">بمجرد الحذف، لن تتمكن من استعادة هذا الملف.</item>
+        <item quantity="one">بمجرد الحذف، لن تتمكن من استعادة هذا الملف.</item>
+        <item quantity="two">بمجرد الحذف، لن تتمكن من استعادة هذين الملفين.</item>
+        <item quantity="few">بمجرد الحذف، لن تتمكن من استعادة هذه الملفات.</item>
+        <item quantity="many">بمجرد الحذف، لن تتمكن من استعادة هذه الملفات.</item>
+        <item quantity="other">بمجرد الحذف، لن تتمكن من استعادة هذه الملفات.</item>
+    </plurals>
+    <plurals name="delete_file_dialog_title">
+        <item quantity="zero">حذف %d ملف؟</item>
+        <item quantity="one">حذف ملف واحد؟</item>
+        <item quantity="two">حذف ملفين اثنين؟</item>
+        <item quantity="few">حذف %d ملفات؟</item>
+        <item quantity="many">حذف %d ملف؟</item>
+        <item quantity="other">حذف %d ملف؟</item>
+    </plurals>
+    <plurals name="delete_playlist_hint">
+        <item quantity="zero">هل انت متأكد من رغبتك في حذف قوائم التشغيل هذه؟</item>
+        <item quantity="one">هل انت متأكد من رغبتك في حذف قائمة التشغيل هذه؟</item>
+        <item quantity="two">هل انت متأكد من رغبتك في حذف قائمتي التشغيل هاتين؟</item>
+        <item quantity="few">هل انت متأكد من رغبتك في حذف قوائم التشغيل هذه؟</item>
+        <item quantity="many">هل انت متأكد من رغبتك في حذف قوائم التشغيل هذه؟</item>
+        <item quantity="other">هل انت متأكد من رغبتك في حذف قوائم التشغيل هذه؟</item>
+    </plurals>
+    <plurals name="delete_song_checkbox">
+        <item quantity="zero">حذف الأغاني من الجهاز أيضًا؟</item>
+        <item quantity="one">حذف الأغنية من الجهاز أيضًا؟</item>
+        <item quantity="two">حذف الأغنيتين من الجهاز أيضًا؟</item>
+        <item quantity="few">حذف الأغاني من الجهاز أيضًا؟</item>
+        <item quantity="many">حذف الأغاني من الجهاز أيضًا؟</item>
+        <item quantity="other">حذف الأغاني من الجهاز أيضًا؟</item>
+    </plurals>
+    <plurals name="delete_song_dialog_content">
+        <item quantity="zero">بمجرد الحذف، لن تتمكن من استعادة هذه الأغاني.</item>
+        <item quantity="one">بمجرد الحذف، لن تتمكن من استعادة هذه الأغنية.</item>
+        <item quantity="two">بمجرد الحذف، لن تتمكن من استعادة هاتين الأغنيتين.</item>
+        <item quantity="few">بمجرد الحذف، لن تتمكن من استعادة هذه الأغاني.</item>
+        <item quantity="many">بمجرد الحذف، لن تتمكن من استعادة هذه الأغاني.</item>
+        <item quantity="other">بمجرد الحذف، لن تتمكن من استعادة هذه الأغاني.</item>
+    </plurals>
+    <plurals name="delete_song_dialog_title">
+        <item quantity="zero">حذف %d أغنية؟</item>
+        <item quantity="one">حذف أغنية واحدة؟</item>
+        <item quantity="two">حذف أغنيتين اثنتين ؟</item>
+        <item quantity="few">حذف %d أغاني؟</item>
+        <item quantity="many">حذف %d أغنية؟</item>
+        <item quantity="other">حذف %d أغنية؟</item>
+    </plurals>
+    <plurals name="delete_song_from_device">
+        <item quantity="zero">هل انت متأكد من رغبتك في مسح هذه الأغاني من الجهاز؟</item>
+        <item quantity="one">هل انت متأكد من رغبتك في مسح هذه الأغنية من الجهاز؟</item>
+        <item quantity="two">هل انت متأكد من رغبتك في مسح هاتين الأغنيتين من الجهاز؟</item>
+        <item quantity="few">هل انت متأكد من رغبتك في مسح هذه الأغاني من الجهاز؟</item>
+        <item quantity="many">هل انت متأكد من رغبتك في مسح هذه الأغاني من الجهاز؟</item>
+        <item quantity="other">هل انت متأكد من رغبتك في مسح هذه الأغاني من الجهاز؟</item>
+    </plurals>
+    <plurals name="delete_song_in_album">
+        <item quantity="zero">هل انت متأكد من رغبتك في مسح هذه الألبومات وما تحتويه من %s ؟</item>
+        <item quantity="one">هل انت متأكد من رغبتك في مسح هذا الألبوم وما يحتويه من %s ؟</item>
+        <item quantity="two">هل انت متأكد من رغبتك في مسح هذين الألبومين وما يحتويانه من %s ؟</item>
+        <item quantity="few">هل انت متأكد من رغبتك في مسح هذه الألبومات وما تحتويه من %s ؟</item>
+        <item quantity="many">هل انت متأكد من رغبتك في مسح هذه الألبومات وما تحتويه من %s ؟</item>
+        <item quantity="other">هل انت متأكد من رغبتك في مسح هذه الألبومات وما تحتويه من %s ؟</item>
+    </plurals>
+    <plurals name="delete_song_in_artist">
+        <item quantity="zero">هل انت متأكد من رغبتك في مسح هؤلاء الفنانين وما يندرج ضمنهم من %s ؟</item>
+        <item quantity="one">هل انت متأكد من رغبتك في مسح هذا الفنان وما يندرج ضمنه من %s ؟</item>
+        <item quantity="two">هل انت متأكد من رغبتك في مسح هذين الفنانين وما يندرج ضمنهما من %s ؟</item>
+        <item quantity="few">هل انت متأكد من رغبتك في مسح هؤلاء الفنانين وما يندرج ضمنهم من %s ؟</item>
+        <item quantity="many">هل انت متأكد من رغبتك في مسح هؤلاء الفنانين وما يندرج ضمنهم من %s ؟</item>
+        <item quantity="other">هل انت متأكد من رغبتك في مسح هؤلاء الفنانين وما يندرج ضمنهم من %s ؟</item>
+    </plurals>
+    <plurals name="delete_tip_all_fail">
+        <item quantity="zero">فشل، لا يمتلك Lark Video الأذونات لحذف هذه الفيديوهات</item>
+        <item quantity="one">فشل، لا يمتلك Lark Video الأذونات لحذف هذا الفيديو</item>
+        <item quantity="two">فشل، لا يمتلك Lark Video الأذونات لحذف هذين الفيديوهين</item>
+        <item quantity="few">فشل، لا يمتلك Lark Video الأذونات لحذف هذه الفيديوهات</item>
+        <item quantity="many">فشل، لا يمتلك Lark Video الأذونات لحذف هذه الفيديوهات</item>
+        <item quantity="other">فشل، لا يمتلك Lark Video الأذونات لحذف هذه الفيديوهات</item>
+    </plurals>
+    <plurals name="delete_tip_part_fail">
+        <item quantity="zero">تم الحذف: تم حذف %1$d فيديو، فشل حذف %2$d فيديو</item>
+        <item quantity="one">تم الحذف: تم حذف %1$d فيديو، فشل حذف %2$d فيديو</item>
+        <item quantity="two">تم الحذف: تم حذف %1$d فيديو، فشل حذف %2$d فيديو</item>
+        <item quantity="few">تم الحذف: تم حذف %1$d فيديوهات، فشل حذف %2$d فيديوهات</item>
+        <item quantity="many">تم الحذف: تم حذف %1$d فيديو، فشل حذف %2$d فيديو</item>
+        <item quantity="other">تم الحذف: تم حذف %1$d فيديو، فشل حذف %2$d فيديو</item>
+    </plurals>
+    <plurals name="delete_video_checkbox">
+        <item quantity="zero">الحذف أيضًا من الجهاز</item>
+        <item quantity="one">الحذف أيضًا من الجهاز</item>
+        <item quantity="two">الحذف أيضًا من الجهاز</item>
+        <item quantity="few">الحذف أيضًا من الجهاز</item>
+        <item quantity="many">الحذف أيضًا من الجهاز</item>
+        <item quantity="other">الحذف أيضًا من الجهاز</item>
+    </plurals>
+    <plurals name="delete_video_checkbox_new">
+        <item quantity="one">حذف الفيديو أيضًا</item>
+        <item quantity="other">حذف المقاطع أيضًا</item>
+    </plurals>
+    <plurals name="delete_video_dialog_content">
+        <item quantity="zero">بمجرد الحذف، لن تتمكن من استعادة هذا الفيديو.</item>
+        <item quantity="one">بمجرد الحذف، لن تتمكن من استعادة هذا الفيديو.</item>
+        <item quantity="two">بمجرد الحذف، لن تتمكن من استعادة هذين الفيديوهين.</item>
+        <item quantity="few">بمجرد الحذف، لن تتمكن من استعادة هذه الفيديوهات.</item>
+        <item quantity="many">بمجرد الحذف، لن تتمكن من استعادة هذه الفيديوهات.</item>
+        <item quantity="other">بمجرد الحذف، لن تتمكن من استعادة هذه الفيديوهات.</item>
+    </plurals>
+    <plurals name="delete_video_dialog_title">
+        <item quantity="zero">حذف %d فيديو؟</item>
+        <item quantity="one">حذف فيديو واحد؟</item>
+        <item quantity="two">حذف فيديوهين اثنين؟</item>
+        <item quantity="few">حذف %d فيديوهات؟</item>
+        <item quantity="many">حذف %d فيديو؟</item>
+        <item quantity="other">حذف %d فيديو؟</item>
+    </plurals>
+    <plurals name="delete_video_playlist_hint">
+        <item quantity="zero">هل أنت متأكد من رغبتك في حذف %d قائمة تشغيل؟ لن يتم حذف الفيديوهات الخاصة بك</item>
+        <item quantity="one">هل أنت متأكد من رغبتك في حذف قائمة التشغيل؟ لن يتم حذف الفيديوهات الخاصة بك</item>
+        <item quantity="two">هل أنت متأكد من رغبتك في حذف قائمتي التشغيل؟ لن يتم حذف الفيديوهات الخاصة بك</item>
+        <item quantity="few">هل أنت متأكد من رغبتك في حذف %d قوائم تشغيل؟ لن يتم حذف الفيديوهات الخاصة بك</item>
+        <item quantity="many">هل أنت متأكد من رغبتك في حذف %d قائمة تشغيل؟ لن يتم حذف الفيديوهات الخاصة بك</item>
+        <item quantity="other">هل أنت متأكد من رغبتك في حذف %d قائمة تشغيل؟ لن يتم حذف الفيديوهات الخاصة بك</item>
+    </plurals>
+    <plurals name="delete_video_playlist_tip">
+        <item quantity="zero">هل انت متأكد من رغبتك في حذف قائمة التشغيل؟</item>
+        <item quantity="one">هل انت متأكد من رغبتك في حذف قائمة التشغيل؟</item>
+        <item quantity="two">هل انت متأكد من رغبتك في حذف قائمتي التشغيل؟</item>
+        <item quantity="few">هل انت متأكد من رغبتك في حذف قوائم التشغيل؟</item>
+        <item quantity="many">هل انت متأكد من رغبتك في حذف قوائم التشغيل؟</item>
+        <item quantity="other">هل انت متأكد من رغبتك في حذف قوائم التشغيل؟</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="file_move_to_recently_deleted_snack">
+        <item quantity="zero">تم نقل ملف إلى \"المحذوف مؤخرًا\"</item>
+        <item quantity="one">تم نقل ملف واحد إلى \"المحذوف مؤخرًا\"</item>
+        <item quantity="two">تم نقل ملفين اثنين إلى \"المحذوف مؤخرًا\"</item>
+        <item quantity="few">تم نقل %1$d ملفات إلى \"المحذوف مؤخرًا\"</item>
+        <item quantity="many">تم نقل %1$d ملف إلى \"المحذوف مؤخرًا\"</item>
+        <item quantity="other">تم نقل %1$d ملف إلى \"المحذوف مؤخرًا\"</item>
+    </plurals>
+    <plurals name="file_not_exist_sdcard_unmount">
+        <item quantity="zero">حدث خطأ ما في بطاقة SD. قم بالتحديث أو إزالة %d ملف من القائمة.</item>
+        <item quantity="one">حدث خطأ ما في بطاقة SD. قم بالتحديث أو إزالة ملف واحد من القائمة.</item>
+        <item quantity="two">حدث خطأ ما في بطاقة SD. قم بالتحديث أو إزالة ملفين اثنين من القائمة.</item>
+        <item quantity="few">حدث خطأ ما في بطاقة SD. قم بالتحديث أو إزالة %d ملفات من القائمة.</item>
+        <item quantity="many">حدث خطأ ما في بطاقة SD. قم بالتحديث أو إزالة %d ملف من القائمة.</item>
+        <item quantity="other">حدث خطأ ما في بطاقة SD. قم بالتحديث أو إزالة %d ملف من القائمة.</item>
+    </plurals>
+    <plurals name="files_quantity">
+        <item quantity="zero">0 ملف</item>
+        <item quantity="one">ملف واحد</item>
+        <item quantity="two">ملفان اثنان</item>
+        <item quantity="few">%d ملفات</item>
+        <item quantity="many">%d ملف</item>
+        <item quantity="other">%d ملف</item>
+    </plurals>
+    <plurals name="flies_quantity">
+        <item quantity="zero">%d ملف</item>
+        <item quantity="one">ملف واحد</item>
+        <item quantity="two">ملفان اثنان</item>
+        <item quantity="few">%d ملفات</item>
+        <item quantity="many">%d ملف</item>
+        <item quantity="other">%d ملف</item>
+    </plurals>
+    <plurals name="hour_ago">
+        <item quantity="zero">منذ %d ساعة</item>
+        <item quantity="one">منذ %d ساعة</item>
+        <item quantity="two">منذ %d ساعة</item>
+        <item quantity="few">منذ %d ساعات</item>
+        <item quantity="many">منذ %d ساعة</item>
+        <item quantity="other">منذ %d ساعة</item>
+    </plurals>
+    <plurals name="lark_player_songs_count">
+        <item quantity="zero">0 أغنية - بواسطة Lark Video</item>
+        <item quantity="one">1 أغنية - بواسطة Lark Video</item>
+        <item quantity="two">%d أغنية - بواسطة Lark Video</item>
+        <item quantity="few">%d أغاني - بواسطة Lark Video</item>
+        <item quantity="many">%d أغنية - بواسطة Lark Video</item>
+        <item quantity="other">%d أغنية - بواسطة Lark Video</item>
+    </plurals>
+    <plurals name="less_than_days">
+        <item quantity="zero">0 يوم</item>
+        <item quantity="one">يوم واحد</item>
+        <item quantity="two">يومان اثنان</item>
+        <item quantity="few">%d أيام</item>
+        <item quantity="many">%d يوم</item>
+        <item quantity="other">%d يوم</item>
+    </plurals>
+    <plurals name="library_videos_quantity">
+        <item quantity="zero">%s فيديو</item>
+        <item quantity="one">%s فيديو</item>
+        <item quantity="two">%s فيديوهين</item>
+        <item quantity="few">%s فيديوهات</item>
+        <item quantity="many">%s فيديو</item>
+        <item quantity="other">%s فيديو</item>
+    </plurals>
+    <plurals name="locking_videos">
+        <item quantity="one">جارٍ قفل %d مقطع فيديو</item>
+        <item quantity="other">جارٍ قفل %d مقطع فيديو</item>
+    </plurals>
+    <plurals name="minute_ago">
+        <item quantity="zero">منذ %d دقيقة</item>
+        <item quantity="one">منذ %d دقيقة</item>
+        <item quantity="two">منذ %d دقيقة</item>
+        <item quantity="few">منذ %d دقائق</item>
+        <item quantity="many">منذ %d دقيقة</item>
+        <item quantity="other">منذ %d دقيقة</item>
+    </plurals>
+    <plurals name="month_ago">
+        <item quantity="zero">منذ %d شهر</item>
+        <item quantity="one">منذ %d شهر</item>
+        <item quantity="two">منذ %d شهر</item>
+        <item quantity="few">منذ %d شهور</item>
+        <item quantity="many">منذ %d شهر</item>
+        <item quantity="other">منذ %d شهر</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
+    <plurals name="multiple_delete_album_file_num">
+        <item quantity="zero">%d ملف</item>
+        <item quantity="one">ملف واحد</item>
+        <item quantity="two">ملفين اثنين</item>
+        <item quantity="few">%d ملفات</item>
+        <item quantity="many">%d ملف</item>
+        <item quantity="other">%d ملف</item>
+    </plurals>
+    <plurals name="multiple_delete_from_device">
+        <item quantity="zero">هل تود حذف %d فيديو من جهازك بشكل نهائي؟</item>
+        <item quantity="one">هل تود حذف فيديو واحد من جهازك بشكل نهائي؟</item>
+        <item quantity="two">هل تود حذف فيديوهين اثنين من جهازك بشكل نهائي؟</item>
+        <item quantity="few">هل تود حذف %d فيديوهات من جهازك بشكل نهائي؟</item>
+        <item quantity="many">هل تود حذف %d فيديو من جهازك بشكل نهائي؟</item>
+        <item quantity="other">هل تود حذف %d فيديو من جهازك بشكل نهائي؟</item>
+    </plurals>
+    <plurals name="new_songs_title">
+        <item quantity="zero">تمت إضافة %1$d أغنية جديدة، المس للتشغيل الآن.</item>
+        <item quantity="one">تمت إضافة أغنية جديد، المس للتشغيل الآن.</item>
+        <item quantity="two">تمت إضافة أغنيتين جديدتين، المس للتشغيل الآن.</item>
+        <item quantity="few">تمت إضافة %1$d أغنيات جديدة، المس للتشغيل الآن.</item>
+        <item quantity="many">تمت إضافة %1$d أغاني جديدة، المس للتشغيل الآن.</item>
+        <item quantity="other">تمت إضافة %1$d أغاني جديدة، المس للتشغيل الآن.</item>
+    </plurals>
+    <plurals name="new_songs_title_new">
+        <item quantity="zero">تمت إضافة %1$d أغنية جديدة، المس للتشغيل الآن.</item>
+        <item quantity="one">تمت إضافة أغنية جديد، المس للتشغيل الآن.</item>
+        <item quantity="two">تمت إضافة أغنيتين جديدتين، المس للتشغيل الآن.</item>
+        <item quantity="few">تمت إضافة %1$d أغنيات جديدة، المس للتشغيل الآن.</item>
+        <item quantity="many">تمت إضافة %1$d أغاني جديدة، المس للتشغيل الآن.</item>
+        <item quantity="other">تمت إضافة %1$d أغاني جديدة، المس للتشغيل الآن.</item>
+    </plurals>
+    <plurals name="new_videos_found">
+        <item quantity="zero">تم العثور على فيديو جديد</item>
+        <item quantity="one">تم العثور على فيديو واحد جديد</item>
+        <item quantity="two">تم العثور على فيديوهين اثنين جدد</item>
+        <item quantity="few">تم العثور على %1$d فيديوهات جديدة</item>
+        <item quantity="many">تم العثور على %1$d فيديو جديد</item>
+        <item quantity="other">تم العثور على %1$d فيديو جديد</item>
+    </plurals>
+    <plurals name="new_videos_title">
+        <item quantity="zero">تمت إضافة %1$d فيديو جديد، المس للتشغيل الآن</item>
+        <item quantity="one">تمت إضافة فيديو واحد جديد، المس للتشغيل الآن</item>
+        <item quantity="two">تمت إضافة فيديوهين جديدين، المس للتشغيل الآن</item>
+        <item quantity="few">تمت إضافة %1$d فيديوهات جديدة، المس للتشغيل الآن</item>
+        <item quantity="many">تمت إضافة %1$d فيديو جديد، المس للتشغيل الآن</item>
+        <item quantity="other">تمت إضافة %1$d فيديو جديد، المس للتشغيل الآن</item>
+    </plurals>
+    <plurals name="new_videos_title_new">
+        <item quantity="zero">تمت إضافة %1$d فيديو جديد، المس للتشغيل الآن</item>
+        <item quantity="one">تمت إضافة فيديو واحد جديد، المس للتشغيل الآن</item>
+        <item quantity="two">تمت إضافة فيديوهين جديدين، المس للتشغيل الآن</item>
+        <item quantity="few">تمت إضافة %1$d فيديوهات جديدة، المس للتشغيل الآن</item>
+        <item quantity="many">تمت إضافة %1$d فيديو جديد، المس للتشغيل الآن</item>
+        <item quantity="other">تمت إضافة %1$d فيديو جديد، المس للتشغيل الآن</item>
+    </plurals>
+    <plurals name="play_count">
+        <item quantity="zero">%s مرة</item>
+        <item quantity="one">%s مرة</item>
+        <item quantity="two">%s مرتان</item>
+        <item quantity="few">%s مرات</item>
+        <item quantity="many">%s مرة</item>
+        <item quantity="other">%s مرة</item>
+    </plurals>
+    <plurals name="playlist_delete_message">
+        <item quantity="one">1 مقطع سيتم نقله إلى المحذوفة مؤخرًا وسيُحذف بعد 30 يومًا.</item>
+        <item quantity="other">%1$d مقاطع سيتم نقلها إلى المحذوفة مؤخرًا وسيُحذف بعد 30 يومًا.</item>
+    </plurals>
+    <plurals name="remove_song_in_playlist">
+        <item quantity="zero">هل انت متأكد من رغبتك في إزالة هذه الأغاني من قائمة التشغيل؟</item>
+        <item quantity="one">هل انت متأكد من رغبتك في إزالة هذه الأغنية من قائمة التشغيل؟</item>
+        <item quantity="two">هل انت متأكد من رغبتك في إزالة هاتين الأغنيتين من قائمة التشغيل؟</item>
+        <item quantity="few">هل انت متأكد من رغبتك في إزالة هذه الأغاني من قائمة التشغيل؟</item>
+        <item quantity="many">هل انت متأكد من رغبتك في إزالة هذه الأغاني من قائمة التشغيل؟</item>
+        <item quantity="other">هل انت متأكد من رغبتك في إزالة هذه الأغاني من قائمة التشغيل؟</item>
+    </plurals>
+    <plurals name="remove_video_from_playlist_hint">
+        <item quantity="zero">هل أنت متأكد من رغبتك في إزالة %d فيديو من قائمة التشغيل؟</item>
+        <item quantity="one">هل أنت متأكد من رغبتك في إزالة فيديو واحد من قائمة التشغيل؟</item>
+        <item quantity="two">هل أنت متأكد من رغبتك في إزالة فيديوهين اثنين من قائمة التشغيل؟</item>
+        <item quantity="few">هل أنت متأكد من رغبتك في إزالة %d فيديوهات من قائمة التشغيل؟</item>
+        <item quantity="many">هل أنت متأكد من رغبتك في إزالة %d فيديو من قائمة التشغيل؟</item>
+        <item quantity="other">هل أنت متأكد من رغبتك في إزالة %d فيديو من قائمة التشغيل؟</item>
+    </plurals>
+    <plurals name="remove_video_from_playlist_tip">
+        <item quantity="zero">هل أنت متأكد من رغبتك في إزالة هذا الفيديو من قائمة التشغيل؟</item>
+        <item quantity="one">هل أنت متأكد من رغبتك في إزالة هذا الفيديو من قائمة التشغيل؟</item>
+        <item quantity="two">هل أنت متأكد من رغبتك في إزالة هذين الفيديوهين من قائمة التشغيل؟</item>
+        <item quantity="few">هل أنت متأكد من رغبتك في إزالة هذه الفيديوهات من قائمة التشغيل؟</item>
+        <item quantity="many">هل أنت متأكد من رغبتك في إزالة هذه الفيديوهات من قائمة التشغيل؟</item>
+        <item quantity="other">هل أنت متأكد من رغبتك في إزالة هذه الفيديوهات من قائمة التشغيل؟</item>
+    </plurals>
+    <plurals name="scan_songs_found">
+        <item quantity="zero">تم العثور على %d أغنية!</item>
+        <item quantity="one">تم العثور على أغنية واحدة!</item>
+        <item quantity="two">تم العثور على أغنيتين اثنتين!</item>
+        <item quantity="few">تم العثور على %d أغاني!</item>
+        <item quantity="many">تم العثور على %d أغنية!</item>
+        <item quantity="other">تم العثور على %d أغنية!</item>
+    </plurals>
+    <plurals name="scan_songs_found2">
+        <item quantity="zero">تم العثور على %d أغنية</item>
+        <item quantity="one">تم العثور على أغنية واحدة</item>
+        <item quantity="two">تم العثور على أغنيتين</item>
+        <item quantity="few">تم العثور على %d أغاني</item>
+        <item quantity="many">تم العثور على %d أغنية</item>
+        <item quantity="other">تم العثور على %d أغنية</item>
+    </plurals>
+    <plurals name="songs_count">
+        <item quantity="zero">%s أغنية</item>
+        <item quantity="one">%s أغنية</item>
+        <item quantity="two">%s أغنيتان</item>
+        <item quantity="few">%s أغاني</item>
+        <item quantity="many">%s أغنية</item>
+        <item quantity="other">%s أغنية</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="zero">%d أغنية</item>
+        <item quantity="one">%d أغنية</item>
+        <item quantity="two">%d أغنيتان</item>
+        <item quantity="few">%d أغاني</item>
+        <item quantity="many">%d أغنية</item>
+        <item quantity="other">%d أغنية</item>
+    </plurals>
+    <plurals name="task_reward">
+        <item quantity="zero">+ %d عملة</item>
+        <item quantity="one">+ عملة واحدة</item>
+        <item quantity="two">+ عملتين</item>
+        <item quantity="few">+ %d عملات</item>
+        <item quantity="many">+ %d عملة</item>
+        <item quantity="other">+ %d عملة</item>
+    </plurals>
+    <plurals name="trash_file_dialog_content">
+        <item quantity="zero">سيتم نقل ملف إلى \"المحذوف مؤخرًا\"وسيتم حذفه خلال 30 يومًا.</item>
+        <item quantity="one">سيتم نقل ملف واحد إلى \"المحذوف مؤخرًا\"وسيتم حذفه خلال 30 يومًا.</item>
+        <item quantity="two">سيتم نقل ملفين اثنين إلى \"المحذوف مؤخرًا\"وسيتم حذفهما خلال 30 يومًا.</item>
+        <item quantity="few">سيتم نقل %d ملفات إلى \"المحذوف مؤخرًا\"وسيتم حذفهم خلال 30 يومًا.</item>
+        <item quantity="many">سيتم نقل %d ملف إلى \"المحذوف مؤخرًا\"وسيتم حذفهم خلال 30 يومًا.</item>
+        <item quantity="other">سيتم نقل %d ملف إلى \"المحذوف مؤخرًا\"وسيتم حذفهم خلال 30 يومًا.</item>
+    </plurals>
+    <plurals name="trash_song_dialog_content">
+        <item quantity="zero">سيتم نقل أغنية إلى \"المحذوف مؤخرًا\"وسيتم حذفها خلال 30 يومًا.</item>
+        <item quantity="one">سيتم نقل أغنية واحدة إلى \"المحذوف مؤخرًا\"وسيتم حذفها خلال 30 يومًا.</item>
+        <item quantity="two">سيتم نقل أغنيتين اثنتين إلى \"المحذوف مؤخرًا\"وسيتم حذفهما خلال 30 يومًا.</item>
+        <item quantity="few">سيتم نقل %d أغاني إلى \"المحذوف مؤخرًا\"وسيتم حذفهم خلال 30 يومًا.</item>
+        <item quantity="many">"سيتم نقل %d أغنية  إلى \"المحذوف مؤخرًا\"وسيتم حذفهم خلال 30 يومًا."</item>
+        <item quantity="other">"سيتم نقل %d أغنية  إلى \"المحذوف مؤخرًا\"وسيتم حذفهم خلال 30 يومًا."</item>
+    </plurals>
+    <plurals name="trash_video_dialog_content">
+        <item quantity="zero">سيتم نقل فيديو إلى \"المحذوف مؤخرًا\" وسيتم حذفه خلال 30 يومًا.</item>
+        <item quantity="one">سيتم نقل فيديو واحد إلى \"المحذوف مؤخرًا\" وسيتم حذفه خلال 30 يومًا.</item>
+        <item quantity="two">سيتم نقل فيديوهين اثنين إلى \"المحذوف مؤخرًا\" وسيتم حذفهما خلال 30 يومًا.</item>
+        <item quantity="few">سيتم نقل %d فيديوهات إلى \"المحذوف مؤخرًا\" وسيتم حذفهم خلال 30 يومًا.</item>
+        <item quantity="many">سيتم نقل %d فيديو إلى \"المحذوف مؤخرًا\" وسيتم حذفهم خلال 30 يومًا.</item>
+        <item quantity="other">سيتم نقل %d فيديو إلى \"المحذوف مؤخرًا\" وسيتم حذفهم خلال 30 يومًا.</item>
+    </plurals>
+    <plurals name="unlocking_videos">
+        <item quantity="one">جارٍ فتح %d مقطع فيديو</item>
+        <item quantity="other">جارٍ فتح %d مقطع فيديو</item>
+    </plurals>
+    <plurals name="video_locked_tip">
+        <item quantity="zero">تم قفل %d فيديو</item>
+        <item quantity="one">تم قفل فيديو واحد</item>
+        <item quantity="two">تم قفل فيديوهين اثنين</item>
+        <item quantity="few">تم قفل %d فيديوهات</item>
+        <item quantity="many">تم قفل %d فيديو</item>
+        <item quantity="other">تم قفل %d فيديو</item>
+    </plurals>
+    <plurals name="video_unlock_tip">
+        <item quantity="zero">تم فك قفل %d فيديو</item>
+        <item quantity="one">تم فك قفل فيديو واحد</item>
+        <item quantity="two">تم فك قفل فيديوهين اثنين</item>
+        <item quantity="few">تم فك قفل %d فيديوهات</item>
+        <item quantity="many">تم فك قفل %d فيديو</item>
+        <item quantity="other">تم فك قفل %d فيديو</item>
+    </plurals>
+    <plurals name="videos_quantity">
+        <item quantity="zero">%d فيديو</item>
+        <item quantity="one">%d فيديو</item>
+        <item quantity="two">%d فيديوهين</item>
+        <item quantity="few">%d فيديوهات</item>
+        <item quantity="many">%d فيديو</item>
+        <item quantity="other">%d فيديو</item>
+    </plurals>
+    <plurals name="view_hidden_folders">
+        <item quantity="zero">رؤية %d مجلد مخفي</item>
+        <item quantity="one">رؤية مجلد مخفي واحد</item>
+        <item quantity="two">رؤية مجلدين مخفيين</item>
+        <item quantity="few">رؤية %d مجلدات مخفية</item>
+        <item quantity="many">رؤية %d مجلد مخفي</item>
+        <item quantity="other">رؤية %d مجلدات مخفية</item>
+    </plurals>
+    <plurals name="x_song_selected">
+        <item quantity="zero">تم تحديد %d أغنية</item>
+        <item quantity="one">تم تحديد أغنية واحدة</item>
+        <item quantity="two">تم تحديد أغنيتين اثنتين</item>
+        <item quantity="few">تم تحديد %d أغان</item>
+        <item quantity="many">تم تحديد %d أغنية</item>
+        <item quantity="other">تم تحديد %d أغنية</item>
+    </plurals>
+</resources>

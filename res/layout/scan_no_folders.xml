@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_centerHorizontal="true" app:srcCompat="@drawable/pic_folder_empty" app:vector_fill_color="?content_weak" />
+    <com.dywx.larkplayer.module.base.widget.LPTextView android:textColor="?content_main" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dp" android:text="@string/no_folder_tip" android:layout_below="@id/iv_icon" android:layout_centerHorizontal="true" android:paddingStart="@dimen/padding_big" android:paddingEnd="@dimen/padding_big" style="@style/Subtitle2_LP" />
+</RelativeLayout>

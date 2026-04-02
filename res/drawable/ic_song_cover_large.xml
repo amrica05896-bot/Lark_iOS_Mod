@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="152.0dp" android:width="152.0dp" android:viewportWidth="152.0" android:viewportHeight="152.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/_ic_song_cover_large__0" android:pathData="M4,0L148,0A4,4 0,0 1,152 4L152,148A4,4 0,0 1,148 152L4,152A4,4 0,0 1,0 148L0,4A4,4 0,0 1,4 0z" />
+    <path android:fillColor="@drawable/_ic_song_cover_large__1" android:pathData="M91,59.92C91,57.813 89.086,56.224 87.015,56.612L70.573,59.69C68.298,60.116 66.65,62.102 66.65,64.416V85.872C65.416,84.875 63.813,84.273 62.062,84.273C58.164,84.273 55.004,87.256 55.004,90.936C55.004,94.617 58.164,97.6 62.062,97.6C65.96,97.6 69.12,94.617 69.12,90.936V72.241C69.12,71.222 69.846,70.348 70.848,70.16L86.022,67.319C87.325,67.075 88.53,68.075 88.53,69.4V79.91C87.296,78.913 85.693,78.311 83.942,78.311C80.044,78.311 76.884,81.294 76.884,84.974C76.884,88.655 80.044,91.638 83.942,91.638C87.84,91.638 91,88.655 91,84.974V59.92Z" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+</vector>

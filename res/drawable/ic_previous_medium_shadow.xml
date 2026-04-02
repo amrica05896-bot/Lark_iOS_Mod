@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dp" android:width="32.0dp" android:autoMirrored="true" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/svg_default_fill" android:pathData="M8.854,27.854C9,27.707 9,27.471 9,27L9,5C9,4.529 9,4.293 8.854,4.146C8.707,4 8.471,4 8,4H6C5.529,4 5.293,4 5.146,4.146C5,4.293 5,4.529 5,5L5,27C5,27.471 5,27.707 5.146,27.854C5.293,28 5.529,28 6,28H8C8.471,28 8.707,28 8.854,27.854ZM26.724,27.447C27,27.309 27,26.873 27,26L27,6C27,5.127 27,4.691 26.724,4.553C26.447,4.415 26.098,4.676 25.4,5.2L25.4,5.2L12.067,15.2C11.578,15.567 11.333,15.75 11.333,16C11.333,16.25 11.578,16.433 12.067,16.8L25.4,26.8C26.098,27.324 26.447,27.585 26.724,27.447Z" android:fillType="evenOdd" />
+</vector>

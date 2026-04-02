@@ -1,0 +1,19 @@
+.class public abstract Lo/sa1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static a(Landroid/media/MediaMetadataRetriever;Landroid/media/MediaDataSource;)V
+    .locals 0
+    .annotation build Landroidx/annotation/DoNotInline;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/media/MediaMetadataRetriever;->setDataSource(Landroid/media/MediaDataSource;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

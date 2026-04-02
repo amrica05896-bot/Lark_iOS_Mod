@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dywx.larkplayer.module.base.widget.LPCheckBox android:padding="@dimen/spacing_normal" android:layout_width="56.0dp" android:layout_height="56.0dp" app:ripple_radius="@dimen/spacing_normal" app:use_ripple="true" style="@style/CheckBoxBase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_upload_file_0" android:paddingTop="@dimen/spacing_xsmall" android:paddingBottom="@dimen/spacing_xsmall" android:layout_width="64.0dp" android:layout_height="72.0dp" android:paddingVertical="@dimen/spacing_xsmall"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:id="@id/cover" android:background="?content_opacity_08" android:layout_width="64.0dp" android:layout_height="64.0dp" app:shapeAppearance="@style/RoundedNormal" />
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="32.0dp" android:layout_height="32.0dp" app:vector_fill_color="?content_weak" />
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:layout_gravity="center" android:id="@id/mask" android:background="?content_main" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="64.0dp" android:layout_height="64.0dp" android:scaleType="center" android:alpha="0.2" app:shapeAppearance="@style/RoundedNormal" />
+    <com.dywx.larkplayer.module.base.widget.LPImageView android:layout_gravity="start|bottom" android:id="@id/video_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginBottom="@dimen/spacing_small" android:src="@drawable/ic_video" android:scaleType="centerInside" android:layout_marginStart="@dimen/spacing_xsmall" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval" android:useLevel="false">
+            <stroke android:width="2.0dp" android:color="@color/transparency_white_tertiary" />
+            <size android:height="64.0dp" android:width="64.0dp" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/ic_pause_medium" android:left="16.0dp" android:top="16.0dp" android:right="16.0dp" android:bottom="16.0dp" />
+</layer-list>

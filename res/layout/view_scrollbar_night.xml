@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dywx.larkplayer.module.base.widget.shape.RoundTextView android:textColor="@color/night_content_main" android:gravity="center" android:id="@id/tv_tip" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dp" android:includeFontPadding="false" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:rv_backgroundColor="@color/night_bg_overlay_top" app:rv_isRadiusHalfHeight="true" app:use_ripple="false" style="@style/Caption_LP" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/rv_view_scrollbar_night" />
+</LinearLayout>

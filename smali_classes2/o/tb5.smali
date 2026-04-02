@@ -1,0 +1,206 @@
+.class public final Lo/tb5;
+.super Lo/ll5;
+.source "SourceFile"
+
+# interfaces
+.implements Lo/lt1;
+
+
+# instance fields
+.field public final synthetic G:Ljava/util/List;
+
+.field public final synthetic H:Lcom/dywx/larkplayer/gui/audio/SongsFragment;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/List;Lcom/dywx/larkplayer/gui/audio/SongsFragment;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lo/tb5;->G:Ljava/util/List;
+
+    iput-object p2, p0, Lo/tb5;->H:Lcom/dywx/larkplayer/gui/audio/SongsFragment;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p3}, Lo/ll5;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lo/xi0;
+
+    .line 2
+    .line 3
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, Lo/tb5;->j(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    check-cast p1, Lo/tb5;
+
+    .line 10
+    .line 11
+    sget-object p2, Lo/bx5;->a:Lo/bx5;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, Lo/tb5;->l(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    return-object p2
+.end method
+
+.method public final j(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 2
+
+    .line 1
+    new-instance p1, Lo/tb5;
+
+    iget-object v0, p0, Lo/tb5;->G:Ljava/util/List;
+
+    iget-object v1, p0, Lo/tb5;->H:Lcom/dywx/larkplayer/gui/audio/SongsFragment;
+
+    invoke-direct {p1, v0, v1, p2}, Lo/tb5;-><init>(Ljava/util/List;Lcom/dywx/larkplayer/gui/audio/SongsFragment;Lkotlin/coroutines/Continuation;)V
+
+    return-object p1
+.end method
+
+.method public final l(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
+
+    .line 1
+    invoke-static {p1}, Lo/tv1;->d0(Ljava/lang/Object;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lo/tb5;->G:Ljava/util/List;
+
+    .line 5
+    .line 6
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p1
+
+    .line 10
+    const-wide/16 v0, 0x0
+
+    .line 11
+    .line 12
+    const/4 v2, 0x0
+
+    .line 13
+    move-wide v7, v0
+
+    .line 14
+    :goto_0
+    if-ge v2, p1, :cond_1
+
+    .line 15
+    .line 16
+    sget-object v0, Lcom/dywx/larkplayer/gui/audio/SongsFragment;->C0:Lcom/dywx/larkplayer/proto/Card;
+
+    .line 17
+    .line 18
+    iget-object v0, p0, Lo/tb5;->H:Lcom/dywx/larkplayer/gui/audio/SongsFragment;
+
+    .line 19
+    .line 20
+    iget-object v0, v0, Lcom/dywx/larkplayer/feature/card/fragment/MixedListFragment;->O:Lo/xb3;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v2}, Lo/xb3;->A(I)Lcom/dywx/larkplayer/proto/Card;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    if-eqz v0, :cond_0
+
+    .line 27
+    .line 28
+    iget-object v0, v0, Lcom/dywx/larkplayer/proto/Card;->mediaWrapper:Lcom/dywx/larkplayer/media/MediaWrapper;
+
+    .line 29
+    .line 30
+    if-eqz v0, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {v0}, Lcom/dywx/larkplayer/media/MediaWrapper;->t1()Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v0
+
+    .line 36
+    if-nez v0, :cond_0
+
+    .line 37
+    .line 38
+    const-wide/16 v0, 0x1
+
+    .line 39
+    .line 40
+    add-long/2addr v7, v0
+
+    .line 41
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    .line 42
+    .line 43
+    goto :goto_0
+
+    .line 44
+    :cond_1
+    const-string v3, "watch"
+
+    .line 45
+    .line 46
+    const-string v4, "invalid_exposure"
+
+    .line 47
+    .line 48
+    const-string v5, ""
+
+    .line 49
+    .line 50
+    const-string v6, "songs"
+
+    .line 51
+    .line 52
+    invoke-static/range {v3 .. v8}, Lo/or6;->Y(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
+
+    .line 53
+    .line 54
+    .line 55
+    sget-object p1, Lo/bx5;->a:Lo/bx5;
+
+    .line 56
+    .line 57
+    return-object p1
+.end method
